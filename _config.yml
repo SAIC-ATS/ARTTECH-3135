@@ -1,0 +1,7 @@
+name: Interactive Art / Creative Code
+baseurl: /ARTTECH-3135
+url: https://saic-ats.github.io/ARTTECH-3135
+description: ARTTECH 3135
+timezone: America/Chicago
+gems:
+    - jekyll-sitemap

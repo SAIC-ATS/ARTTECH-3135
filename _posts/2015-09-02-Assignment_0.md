@@ -5,7 +5,7 @@ title:      Assignment 0
 subtitle:   Getting Started!
 author:     bakercp
 date:       2015-09-02 18:00:00
-due:        2014-09-09
+due:        2015-09-09
 ---
 
 1. Install!

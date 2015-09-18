@@ -1,8 +1,8 @@
 ---
 layout:     assignment
 categories: assignment
-title:      Assignment 1
-subtitle:   Getting Started!
+title:      Assignment 2
+subtitle:   Computer Vision
 author:     bakercp
 date:       2015-09-08 18:00:00
 due:        2015-09-16

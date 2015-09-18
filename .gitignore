@@ -5,6 +5,8 @@
 _private
 _site
 
+.compiler_flags*
+
 # build files
 openFrameworks.a
 openFrameworksDebug.a

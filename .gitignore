@@ -2,6 +2,9 @@
 # openFrameworks patterns
 #########################
 
+_private
+_site
+
 # build files
 openFrameworks.a
 openFrameworksDebug.a

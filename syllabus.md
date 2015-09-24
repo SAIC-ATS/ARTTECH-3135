@@ -134,22 +134,69 @@ _(subject to change based on incoming skills and experience)_
     - [https://github.com/olab-io/](https://github.com/olab-io/)
     - [https://github.com/openframeworks/ofBook/blob/master/chapters/ofSketch/chapter.md](https://github.com/openframeworks/ofBook/blob/master/chapters/ofSketch/chapter.md)
 
-- Finite State Machines
-- Object Oriented Programming.
-- Introduction to openFrameworks
-    - Graphics. All of them.
-- Project 1 Proposals
+    - Program flow and state, Pong Example
 
 #### Week 4
-- Animation
-- Project 1 Work.
+- Review Pong Mods
+- Review helper functions and classes
+    - ofLerp, ofMap, and ofNormalize all help us scale linearly scale numbers.
+    - ofSoundPlayer allows us to play sounds.
+    - ofVideoPlayer allows us to play video.
+    - ofTrueTypeFont allows us to do more sophisticated typography.
+- How to Upload Pong Examples to Private Repo
+- Object Oriented Programming.  
+- OOP vs Structured Programming
+    - C++ is often described as C + object oriented code.
+    - Structured -> top down approach
+    - OOP -> create models problem
+    - Why OOP?
+        - Duplicate code can be confusing and lead to bug if it is modified in the future. You will always forget something!
+        - Modeling the world using objects can often be more intuitive, better differentiating between form and function.
+    - Classes
+        - Classes are user defined data structures.
+        - Classes are reusable between programs.
+        - Classes are a way to aggregate or model form (attributes) and function (methods) into reusable units.
+        - Classes are often used to easily represent multiples of a complex object.
+        - Classes are "extensible" through inheritance.
+        - An class "instance" is an independent "instantiated" variable form of a class.
+        - In the same way that an `int` is a variable type and it is instantiated by calling `int i = 0;`, a class variable type like `Ball ball1;`  Now the `ball1` variable is its own "instance" that can be manipulated.  Other "instances" e.g. `Ball ball2;` will have the same capabilities as `ball1`, but it will behave independently by default.
+        - Example: Writing a class definition for a ball.
+            - What are the "attributes" (that can be represented as variables) of a ball?
+                - Position
+                - Velocity
+                - Color
+                - ...
+            - What are the "actions" associated with a human?
+                - update
+                - draw
+        - Create default instances like you would with other variables.
+        - Create custom instances by defining custom constructors.
+        - Dot operator give you access to "member" attributes within a class.
+    - Warnings:
+        - Don't try to model the world!
+        - Design your classes and represent only salient attributes and actions that you need for your project.
+        - OOP isn't the solution to everything.  Most advanced programs are a combination of structured and object oriented approaches.
+- Particle System Examples
+    - Replace ball variables with a Ball class.
+    - Replace x / y / z variables with ofPoint (which is an alias for ofVec3f).
+        - ofPoint is a "vector" of values, x, y, z and vector math can be performed in one line.
+        - ofPoint is a class!
+    - Particle systems in 3D!
+- Arrays are collections of variables.
+    - In C++ we usually use a `std::vector` to hold a collection of variables.
+    - We must define the contents of the `std::vector` using a template argument like `std::vector<int>` for a collection of integers.
 
 #### Week 5
-- Project 1 Critiques.
+- OOP continued
+    - Inheritance
+- Pointers, memory
+- Pixels
+- Textures
+- Intro to computer vision.
 
 #### Week 6
+- Intro to XCode / IDEs
 - Project 2 Proposals
-- Sound and Video, Image, Multi-media.
 
 #### Week 7
 - "Game States"

@@ -38,3 +38,5 @@ due:        2015-10-07
             - [Pictures for Inspiration](https://www.google.com/search?q=particle+system+examples&safe=off&espv=2&biw=1280&bih=757&tbm=isch&tbo=u&source=univ&sa=X&ved=0CEEQsARqFQoTCOCC1LCGo8gCFUeKDQodcWUCww)
 
 4. Submit the results of step 3 to our new private github repository.  Follow the same instructions posted in the video, but this time place it in the `Assignment_4` folder.  Please do this before class starts.
+
+5. Revise Project Proposal for Mid-Term Project - Submit it to github like you did for the first project proposal. The mid-term project should be something that you can complete in 3-4 weeks and it should not move too far outside of what we have covered in class so far.

@@ -187,40 +187,49 @@ _(subject to change based on incoming skills and experience)_
     - We must define the contents of the `std::vector` using a template argument like `std::vector<int>` for a collection of integers.
 
 #### Week 5
-- OOP continued
-    - Inheritance
+- Semantics
+    - Difference between Functions and Methods / Member Functions.
+    - Difference between parameters and arguments.
+- OOP (continued)
+    - Review Classes
+        - Difference between a `class` (a user defined type) and an `object` (instance of a class).
+        - Abstraction
+            - Why abstraction?
+        - Encapsulation
+            - Why encapsulation?
+        - "Dot" syntax to access member functions / member variables.
+    - Function Overloading
+    - Operator Overloading
+    - Polymorphism "having many forms"
 - Pointers, memory
-- Pixels
-- Textures
-- Intro to computer vision.
 
 #### Week 6
-- Intro to XCode / IDEs
-- Project 2 Proposals
+- Brief Intro to XCode / IDEs
+- Pixels
+- Textures
+- Meshes
+- Mid Term Project Discussions
 
 #### Week 7
-- "Game States"
-- Project 2 Work
+- Mid Term Project Proposals Due
+- Intro to computer vision.
+- Optional IO Lab Training  
 
 #### Week 9
-- Project 2 Critiques
+- Computer Vision Continued.
+- Mid Term Project Work
 
 #### Week 10
-- Project 3 Proposal
-- Computer Vision - Teaching Computers to See
-- Project 3 Work
+- Mid Term Project Work
 
 #### Week 11
-- Computer Vision - Lets get serious.
-- Project 3 Work
+- Mid Term Project Critiques
 
 #### Week 13
-- Advanced Topics and Integration.
-- Project 3 Work
+- Final Project Work
 
 #### Week 14
-- Advanced Topics and Integration (continued)
-- Project 3 Work
+- Final Project Work
 
 #### Week 15
-- Project 3 Critiques
+- Final Project Critiques

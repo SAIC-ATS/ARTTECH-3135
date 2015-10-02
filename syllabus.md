@@ -208,12 +208,12 @@ _(subject to change based on incoming skills and experience)_
 - Pixels
 - Textures
 - Meshes
-- Mid Term Project Discussions
+- Mid Term Project Proposals Due + Discussion
 
 #### Week 7
-- Mid Term Project Proposals Due
 - Intro to computer vision.
 - Optional IO Lab Training  
+- Mid Term Project Work
 
 #### Week 9
 - Computer Vision Continued.

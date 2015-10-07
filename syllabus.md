@@ -21,7 +21,7 @@ Class Forum
 :   [http://talk.olab.io/c/saic/ats-3135-interactive-art](http://talk.olab.io/c/saic/ats-3135-interactive-art)
 
 Class Website
-:   [http://bakercp.github.io/InteractiveArt/](http://bakercp.github.io/InteractiveArt/)
+:   [http://saic-ats.github.io/ARTTECH-3135/](http://saic-ats.github.io/ARTTECH-3135/)
 
 TA
 :   TBA

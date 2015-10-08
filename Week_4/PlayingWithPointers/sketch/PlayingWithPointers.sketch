@@ -29,8 +29,8 @@ void setup() {
     // std::cout << "*pA = " << *pA << std::endl;
 
 
-    // std::shared_ptr<int> spInt = std::shared_ptr<int>(new int);
-    std::shared_ptr<int> spInt = std::make_shared<int>();
+    std::shared_ptr<int> spInt = std::shared_ptr<int>(new int);
+    // std::shared_ptr<int> spInt = std::make_shared<int>();
 
     *spInt = 33;
 

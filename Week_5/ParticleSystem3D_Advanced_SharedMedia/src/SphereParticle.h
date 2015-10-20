@@ -1,14 +1,9 @@
-#line 1 "SphereParticle"
+#pragma once
+
 
 #include "ofMain.h"
 #include "ofxAssimpModelLoader.h"
 #include "BaseParticle.h"
-
-
-#line 3 "SphereParticle"
-#pragma once
-
-
 
 
 class SphereParticle: public BaseParticle {

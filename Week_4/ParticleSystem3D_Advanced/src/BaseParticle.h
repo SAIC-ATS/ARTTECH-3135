@@ -1,10 +1,7 @@
-#line 1 "BaseParticle"
+#pragma once
+
 
 #include "ofMain.h"
-
-
-#line 1 "BaseParticle"
-#pragma once
 
 
 /// \brief This class defines the basic properties of a simple 3D particle.

@@ -1,12 +1,15 @@
-#line 1 "SphereParticle"
+#pragma once
+
 
 #include "ofMain.h"
+#include "BaseParticle.h"
 
 
-#line 1 "SphereParticle"
-class SphereParticle: public BaseParticle {
+class SphereParticle: public BaseParticle
+{
 public:
-	virtual void draw() {
+	virtual void draw()
+	{
         ofFill();
         ofSetColor(ofColor::yellow);
         ofDrawSphere(position, 40);

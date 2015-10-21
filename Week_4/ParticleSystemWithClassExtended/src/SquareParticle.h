@@ -27,7 +27,7 @@ public:
         ofPushMatrix();
         ofTranslate(position.x, position.y);
         ofRotateZ(angle);
-        ofRect(0, 0, 20, 40);
+        ofDrawRectangle(0, 0, 20, 40);
         ofPopMatrix();
     }
     
@@ -56,7 +56,7 @@ public:
         ofPushMatrix();
         ofTranslate(position.x, position.y);
         ofRotateZ(angle);
-        ofTriangle(0, 0, 20, 40, 40, 20);
+        ofDrawTriangle(0, 0, 20, 40, 40, 20);
         ofPopMatrix();
     }
     

@@ -1,13 +1,8 @@
-#line 1 "SphereParticle"
-
-#include "ofMain.h"
-#include "BaseParticle.h"
-
-
-#line 2 "SphereParticle"
 #pragma once
 
 
+#include "ofMain.h"
+#include "BaseParticle.h"
 
 
 class SphereParticle: public BaseParticle {

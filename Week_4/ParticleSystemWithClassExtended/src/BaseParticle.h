@@ -29,7 +29,7 @@ public:
     {  
         ofFill();
         ofSetColor(255, 255, 0, 127);
-        ofCircle(position.x, position.y, 20);
+        ofDrawCircle(position.x, position.y, 20);
     }
     
     ofVec2f position;

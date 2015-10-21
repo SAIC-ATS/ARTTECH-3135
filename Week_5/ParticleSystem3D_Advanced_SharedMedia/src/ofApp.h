@@ -165,7 +165,7 @@ public:
 
 					ofSetColor(255, alpha);
 
-					ofLine(particles[i]->position, particles[j]->position);
+					ofDrawLine(particles[i]->position, particles[j]->position);
 				}
 			}
 		}
@@ -269,7 +269,7 @@ public:
 		ofPoint halfBoxSize = boxSize / 2;
 
 		// Instantiate our base particle.
-		std::shared_ptr<SphereParticle> aParticle = std::shared_ptr<SphereParticle>(new SphereParticle());
+		std::shared_ptr<SphereParticle> aParticle = std::make_shared<SphereParticle>();
 
 		// Set the initial position to a random point inside our bounding box.
 		aParticle->position = ofPoint(ofRandom(-halfBoxSize.x, halfBoxSize.x),
@@ -304,7 +304,7 @@ public:
 		ofPoint halfBoxSize = boxSize / 2;
 
 		// Instantiate our base particle.
-		std::shared_ptr<AssimpParticle> aParticle = std::shared_ptr<AssimpParticle>(new AssimpParticle());
+		std::shared_ptr<AssimpParticle> aParticle = std::make_shared<AssimpParticle>();
 
 		// Set the initial position to a random point inside our bounding box.
 		aParticle->position = ofPoint(0, 0, 0);
@@ -337,7 +337,7 @@ public:
 		ofPoint halfBoxSize = boxSize / 2;
 
 		// Instantiate our base particle.
-		std::shared_ptr<AssimpParticle> aParticle = std::shared_ptr<AssimpParticle>(new AssimpParticle());
+		std::shared_ptr<AssimpParticle> aParticle = std::make_shared<AssimpParticle>();
 
 		// Set the initial position to a random point inside our bounding box.
 		aParticle->position = ofPoint(0, 0, 0);

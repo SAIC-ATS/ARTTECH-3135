@@ -4,13 +4,13 @@ categories: assignment
 title:      Assignment 2
 subtitle:   Computer Vision + Pong
 author:     bakercp
-date:       2015-09-16 18:00:00
-due:        2015-09-23
+date:       2016-09-16 18:00:00
+due:        2016-09-23
 ---
 
 1. Bookkeeping!
     - Make sure you can access the class forum here: http://talk.olab.io/c/saic/ats-3135-interactive-art.
-    - Make sure you have cleaned up your previous repository and joined the new private repository.  If you can't see [this](https://github.com/SAIC/ARTTECH-3135-Fall-2015-Private), then go [here](http://talk.olab.io/t/class-3-assignment-part-1/907) for instructions.
+    - Make sure you have cleaned up your previous repository and joined the new private repository.  If you can't see [this](https://github.com/SAIC/ARTTECH-3135-Fall-2016-Private), then go [here](http://talk.olab.io/t/class-3-assignment-part-1/907) for instructions.
 
 2. Read!
     - Read: [Computer Vision for Artists And Designers](http://www.flong.com/texts/essays/essay_cvad/).

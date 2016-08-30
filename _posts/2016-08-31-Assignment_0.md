@@ -4,8 +4,8 @@ categories: assignment
 title:      Assignment 0
 subtitle:   Getting Started!
 author:     bakercp
-date:       2015-09-02 18:00:00
-due:        2015-09-09
+date:       2016-08-30 18:00:00
+due:        2016-09-07
 ---
 
 1. Install!
@@ -15,6 +15,7 @@ due:        2015-09-09
 	- Sign up for [http://github.com](http://github.com).  Just get a free account.
     - Check out the [backpack](https://education.github.com/pack)!
 	- Sign up for an account at [http://talk.olab.io](http://talk.olab.io).
+  - Sign up for an account at [http://ats.community](http://ats.community).
 3. Prepare!
     - Read: [What is Code?](http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/)
         - Why? _This is a recent well-received popular article describing "code" for a popular audience. You will be joining the ranks of "coders" this week and I think you should have some sense of what you are getting yourself into ... and how you might want to influence the field._
@@ -25,7 +26,7 @@ due:        2015-09-09
     - Read: ofBook [Philosophy](http://openframeworks.cc/ofBook/chapters/of_philosophy.html)
         - Why? _This gives an articulate description of the design goals of openFrameworks and the DIWO culture that we attempt to model in this course._
     - Read: ofBook [C++ Language Basics](http://openframeworks.cc/ofBook/chapters/cplusplus_basics.html)
-        - Why? _These are the basics of our langauge that you'll come back to again and again. We will be going over this in week 2 so a head start will make week two go much more smoothly and hopefully you'll remember more._
+        - Why? _These are the basics of our language that you'll come back to again and again. We will be going over this in week 2 so a head start will make week two go much more smoothly and hopefully you'll remember more._
     - Read: ofBook [ofSketch](http://openframeworks.cc/ofBook/chapters/ofSketch.html)
         - Why? _ofSketch is the software we'll be using to develop openFrameworks code. We'll be going into this in more depth in week two and [the more you know](https://www.youtube.com/watch?v=v3rhQc666Sg) the better._
 4. Watch:

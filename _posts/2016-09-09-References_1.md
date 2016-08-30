@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Week 1 References"
-date:   2015-09-09 18:00:00
+date:   2016-09-09 18:00:00
 categories: post
 author: bakercp
 ---

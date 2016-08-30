@@ -4,8 +4,8 @@ categories: assignment
 title:      Assignment 3
 subtitle:   Particle Systems
 author:     bakercp
-date:       2015-09-23 18:00:00
-due:        2015-09-30
+date:       2016-09-23 18:00:00
+due:        2016-09-30
 ---
 
 1. Bookkeeping!

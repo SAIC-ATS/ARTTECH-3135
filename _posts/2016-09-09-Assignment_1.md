@@ -4,8 +4,8 @@ categories: assignment
 title:      Assignment 1
 subtitle:   Getting Started!
 author:     bakercp
-date:       2015-09-08 18:00:00
-due:        2015-09-16
+date:       2016-09-08 18:00:00
+due:        2016-09-16
 ---
 
 1. Bookkeeping!
@@ -25,4 +25,4 @@ due:        2015-09-16
 
 4. Project Proposal
     - Post four ideas for _Project 0: A Clock With Benefits_ on a blog post on our class.
-    - To make a blog post, use the `2015-09-04-HelloWorld.md` as a template.  Duplicate the file, change the name and the metadata to match your project and `git add`, `git commit`, `git push`, then pull request.
+    - To make a blog post, use the `2016-09-04-HelloWorld.md` as a template.  Duplicate the file, change the name and the metadata to match your project and `git add`, `git commit`, `git push`, then pull request.

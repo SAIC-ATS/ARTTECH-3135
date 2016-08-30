@@ -6,13 +6,13 @@ title:  Syllabus
 ## Interactive Art / Creative Code, ARTTECH 3135
 
 Semester, Year
-:   Fall, 2015
+:   Fall, 2016
 
 Meeting Times
 :   Wednesday 9am-4pm
 
 Meeting Location
-:   MacLean 416
+:   MacLean 401
 
 Instructor
 :   [Christopher Baker](http://christopherbaker.net)
@@ -24,12 +24,15 @@ Class Website
 :   [http://saic-ats.github.io/ARTTECH-3135/](http://saic-ats.github.io/ARTTECH-3135/)
 
 TA
-:   TBA
+:   [Billie Pate](http://www.billiepate.com/)
 
 --------------------------------------------------------------------------------
 
 ### Instructor Bio
 [Christopher Baker](http://christopherbaker.net) is an artist whose work engages the rich collection of social, technological and ideological networks present in the urban landscape. He creates artifacts and situations that reveal and generate relationships within and between these networks.  Christopher’s work has been presented worldwide and he contributes to the open source community at [http://github.com/bakercp](http://github.com/bakercp).
+
+### TA Bio
+[Billie Pate](http://www.billiepate.com/) is an LA based experimental media artist. She creates technology-driven visual art.
 
 --------------------------------------------------------------------------------
 
@@ -37,10 +40,6 @@ TA
 This studio course investigates the creative possibilities in programming, from interactivity to information visualization. Students explore interactive narratives and games, software art, simulations and emergent behaviors, and other code-based forms. Lectures, discussions, and demonstrations provide a conceptual, aesthetic and technical foundation in programming as a creative practice.
 
 ### Course Goals
-
--foundation in creative coding.
--projects spanning conceptual and creative ideas.
--interfacing of both hardware and software in creative practice.
 
 __Key goals include:__
 
@@ -52,7 +51,7 @@ __Key goals include:__
 ### Course Values
 - Sharing / Open
     - Documentation
-    - DIWO
+    - [DIWO](http://furtherfield.org/projects/diwo-do-it-others-resource)
     - Publish
     - Cult of Done (http://www.brepettis.com/blog/2009/3/3/the-cult-of-done-manifesto.html)
 

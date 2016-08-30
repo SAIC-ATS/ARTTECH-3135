@@ -101,12 +101,12 @@ _(subject to change based on incoming skills and experience)_
 - Survey of Creative Coding Platforms.
 - So what are we going to focus on?
     - Software
-        - [openFrameworks](http://openframeworks.cc/) using [ofSketch](https://github.com/olab-io/ofSketch) (C/C++)
+        - [openFrameworks](http://openframeworks.cc/) (C/C++)
 
 - Workshop: Introduction to the Terminal.
-    - https://github.com/olab-io/microWorkshops/blob/master/Terminal_Intro/Terminal_Intro.md
+    - [Terminal Intro](https://github.com/olab-io/microWorkshops/blob/master/Terminal_Intro/Terminal_Intro.md)
 
-- Basic ofSketch Intro
+- Basic openFrameworks Intro
     - Framework
     - Shapes
     - Colors
@@ -131,17 +131,15 @@ _(subject to change based on incoming skills and experience)_
 - Introduction to C++
 - Introduction to the ofSketch IDE.
     - [https://github.com/olab-io/](https://github.com/olab-io/)
-    - [https://github.com/openframeworks/ofBook/blob/master/chapters/ofSketch/chapter.md](https://github.com/openframeworks/ofBook/blob/master/chapters/ofSketch/chapter.md)
-
     - Program flow and state, Pong Example
 
 #### Week 4
 - Review Pong Mods
 - Review helper functions and classes
-    - ofLerp, ofMap, and ofNormalize all help us scale linearly scale numbers.
-    - ofSoundPlayer allows us to play sounds.
-    - ofVideoPlayer allows us to play video.
-    - ofTrueTypeFont allows us to do more sophisticated typography.
+    - `ofLerp`, `ofMap`, and `ofNormalize` all help us scale linearly scale numbers.
+    - `ofSoundPlayer` allows us to play sounds.
+    - `ofVideoPlayer` allows us to play video.
+    - `ofTrueTypeFont` allows us to do more sophisticated typography.
 - How to Upload Pong Examples to Private Repo
 - Object Oriented Programming.  
 - OOP vs Structured Programming
@@ -177,9 +175,9 @@ _(subject to change based on incoming skills and experience)_
         - OOP isn't the solution to everything.  Most advanced programs are a combination of structured and object oriented approaches.
 - Particle System Examples
     - Replace ball variables with a Ball class.
-    - Replace x / y / z variables with ofPoint (which is an alias for ofVec3f).
-        - ofPoint is a "vector" of values, x, y, z and vector math can be performed in one line.
-        - ofPoint is a class!
+    - Replace x / y / z variables with `ofPoint` (which is an alias for `ofVec3f` or in 0.10.0+ `glm::vec3`).
+        - `ofPoint` is a "vector" of values, x, y, z and vector math can be performed in one line.
+        - `ofPoint` is a class!
     - Particle systems in 3D!
 - Arrays are collections of variables.
     - In C++ we usually use a `std::vector` to hold a collection of variables.
@@ -210,12 +208,12 @@ _(subject to change based on incoming skills and experience)_
 - Mid Term Project Proposals Due + Discussion
 
 #### Week 7
-- Intro to computer vision.
+- Intro to computer vision / Machine Learning.
 - Optional IO Lab Training  
 - Mid Term Project Work
 
 #### Week 9
-- Computer Vision Continued.
+- Computer Vision / Machine Learning Continued.
 - Mid Term Project Work
 
 #### Week 10

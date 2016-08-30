@@ -4,8 +4,8 @@ categories: assignment
 title:      Assignment 4
 subtitle:   Object Oriented Code
 author:     bakercp
-date:       2015-09-30 18:00:00
-due:        2015-10-07
+date:       2016-09-30 18:00:00
+due:        2016-10-07
 ---
 
 1. Bookkeeping!

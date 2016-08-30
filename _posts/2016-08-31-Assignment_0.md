@@ -27,8 +27,6 @@ due:        2016-09-07
         - Why? _This gives an articulate description of the design goals of openFrameworks and the DIWO culture that we attempt to model in this course._
     - Read: ofBook [C++ Language Basics](http://openframeworks.cc/ofBook/chapters/cplusplus_basics.html)
         - Why? _These are the basics of our language that you'll come back to again and again. We will be going over this in week 2 so a head start will make week two go much more smoothly and hopefully you'll remember more._
-    - Read: ofBook [ofSketch](http://openframeworks.cc/ofBook/chapters/ofSketch.html)
-        - Why? _ofSketch is the software we'll be using to develop openFrameworks code. We'll be going into this in more depth in week two and [the more you know](https://www.youtube.com/watch?v=v3rhQc666Sg) the better._
 4. Watch:
     - Watch at least one of these videos [https://vimeo.com/eyeofestival/videos](https://vimeo.com/eyeofestival/videos).
         - Why: _The presenters at [Eyeo Festival](http://eyeofestival.com/) and [INST-INT](http://inst-int.com/) are very influential in the field of Interactive Art / Creative Code.  Pay attention to them, but try not to be overwhelmed._

@@ -3,7 +3,6 @@
 
 void ofApp::draw()
 {
-
 	// Check to see if brightness is increasing.
 	if (isBrightnessIncreasing == true)
 	{

@@ -18,7 +18,7 @@ Instructor
 :   [Christopher Baker](http://christopherbaker.net)
 
 Class Forum
-:   [http://talk.olab.io/c/saic/ats-3135-interactive-art](http://talk.olab.io/c/saic/ats-3135-interactive-art)
+:   [https://ats.community/c/courses/arttech-3135](https://ats.community/c/courses/arttech-3135)
 
 Class Website
 :   [http://saic-ats.github.io/ARTTECH-3135/](http://saic-ats.github.io/ARTTECH-3135/)
@@ -98,14 +98,31 @@ _(subject to change based on incoming skills and experience)_
 #### Week 1
 - Introduction to course / syllabus.
 - Introduction to each other.
+- Interesting Recent Creative Coding Work 
+  - [Claire Hentschker](http://www.clairesophie.com/)
+  - [TerraPattern](http://www.terrapattern.com/)
+  - [Alt-AI exhibition](http://alt-ai.net/#exhibition)
 - Survey of Creative Coding Platforms.
+  - Patch Based / Visual
+    - [Max](https://cycling74.com/products/max/)
+    - [Grasshopper](http://www.grasshopper3d.com/)
+  - Procedural
+    - [Processing](https://processing.org/)
+      - Getting started: http://hello.processing.org/
+      - Variations
+        - Javascript: https://p5js.org/
+        - Android: http://android.processing.org/
+        - Python: http://py.processing.org/
+    - [libCinder](https://libcinder.org/)
+    - [openFrameworks](http://openFrameworks.cc)
+    - [Unreal Engine](https://www.unrealengine.com)
+  - Hybrid
+    - [Unity3d](https://unity3d.com/)
 - So what are we going to focus on?
     - Software
         - [openFrameworks](http://openframeworks.cc/) (C/C++)
-
-- Workshop: Introduction to the Terminal.
-    - [Terminal Intro](https://github.com/olab-io/microWorkshops/blob/master/Terminal_Intro/Terminal_Intro.md)
-
+- Getting Started
+    -
 - Basic openFrameworks Intro
     - Framework
     - Shapes
@@ -117,7 +134,8 @@ _(subject to change based on incoming skills and experience)_
 - Discussion
     - Discuss "What is Code"
     - Week 1 artists.
-
+- Workshop: Introduction to the Terminal.
+    - [Terminal Intro](https://github.com/olab-io/microWorkshops/blob/master/Terminal_Intro/Terminal_Intro.md)
 - Bookkeeping / Workshop
     - [Discourse](http://discourse.org)
     - [http://talk.olab.io](http://talk.olab.io) Review

@@ -98,10 +98,14 @@ _(subject to change based on incoming skills and experience)_
 #### Week 1
 - Introduction to course / syllabus.
 - Introduction to each other.
-- Interesting Recent Creative Coding Work 
+- Interesting Recent Creative Coding Work
   - [Claire Hentschker](http://www.clairesophie.com/)
   - [TerraPattern](http://www.terrapattern.com/)
   - [Alt-AI exhibition](http://alt-ai.net/#exhibition)
+  - [w/ openFrameworks](http://openframeworks.cc/gallery/)
+  - [w/ Processing](https://processing.org/exhibition/)
+  - Online
+    - [Creative Applications](http://www.creativeapplications.net/)
 - Survey of Creative Coding Platforms.
   - Patch Based / Visual
     - [Max](https://cycling74.com/products/max/)
@@ -110,24 +114,31 @@ _(subject to change based on incoming skills and experience)_
     - [Processing](https://processing.org/)
       - Getting started: http://hello.processing.org/
       - Variations
-        - Javascript: https://p5js.org/
-        - Android: http://android.processing.org/
-        - Python: http://py.processing.org/
+        - Javascript: [https://p5js.org/](https://p5js.org/)
+        - Android: [http://android.processing.org/](http://android.processing.org/)
+        - Python: [http://py.processing.org/](http://py.processing.org/)
     - [libCinder](https://libcinder.org/)
     - [openFrameworks](http://openFrameworks.cc)
-    - [Unreal Engine](https://www.unrealengine.com)
   - Hybrid
     - [Unity3d](https://unity3d.com/)
+    - [Unreal Engine](https://www.unrealengine.com)
 - So what are we going to focus on?
     - Software
         - [openFrameworks](http://openframeworks.cc/) (C/C++)
 - Getting Started
-    -
-- Basic openFrameworks Intro
+    - Code Comments (e.g. why? [this](http://qz.com/726338/the-code-that-took-america-to-the-moon-was-just-published-to-github-and-its-like-a-1960s-time-capsule/))
+    - What is compiling?
+    - Hello World?!
     - Framework
     - Shapes
     - Colors
     - Interactivity
+- Common Errors
+  - What is your compiler target?
+  - Did you accidentally add a break point?
+  - How do I start over?
+  - What about variable "scope"?
+  - Why won't my if-statement do what I wanted it to?
 
 #### Week 2
 

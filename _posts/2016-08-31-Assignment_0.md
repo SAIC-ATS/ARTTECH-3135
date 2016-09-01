@@ -30,17 +30,14 @@ due:        2016-09-07
 5. Code Project: [*required*]
     - Artist Sol Lewitt (1928-2007) is well-known for creating algorithmic drawings that exist as sets of instructions, rather than as a finalized, rendered piece.
     - For example:
-
-```
-_Wall Drawing #327_
-
-On a black wall, a white trapezoid within which are white vertical parallel lines and a white square within which are white horizontal parallel lines. The vertical lines within the trapezoid do not enter the square, and the horizontal lines within the square do not enter the trapezoid.
-```
-```
-_Wall Drawing #328_
-
-On a black wall, a white circle within which are white vertical parallel lines, and a white parallelogram within which are white horizontal parallel lines. The vertical lines within the circle do not enter the parallelogram, and the horizontal lines within the parallelogram do not enter the circle.
-```
+      <blockquote>
+      _Wall Drawing #327_ -
+      On a black wall, a white trapezoid within which are white vertical parallel lines and a white square within which are white horizontal parallel lines. The vertical lines within the trapezoid do not enter the square, and the horizontal lines within the square do not enter the trapezoid.
+      </blockquote>
+      <blockquote>
+      _Wall Drawing #328_
+      On a black wall, a white circle within which are white vertical parallel lines, and a white parallelogram within which are white horizontal parallel lines. The vertical lines within the circle do not enter the parallelogram, and the horizontal lines within the parallelogram do not enter the circle.
+      </blockquote>
     - Online, you will find other people's renderings based on these instructions, but I encourage you to avoid the urge to google them and interpret them for yourself and your limited toolset.
     - So, your job is to *render at least one of the above instructions* using openFrameworks.  Consider using combinations of `ofDrawLine`, `ofDrawRectangle`, `ofDrawCircle`.
     - For added challenge, try to do it using as few lines of code as possible (hint, consider using [for-loops](http://www.tutorialspoint.com/cplusplus/cpp_for_loop.htm) to create repetitions )

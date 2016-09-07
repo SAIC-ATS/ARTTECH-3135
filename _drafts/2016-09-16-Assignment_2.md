@@ -45,3 +45,8 @@ due:        2016-09-23
         - Control the paddle with the mouse.
 
 4. Submit the results of step 3 to our new private github repository (this is how I'll know if you did it and how your friends will benefit from seeing everyone's code).  We will go over how I want you to do this in class.
+
+4. Project Proposal
+    - Post four ideas for _Project 0: A Clock With Benefits_ on a blog post on our class.
+    - To make a blog post, use the `2016-09-04-HelloWorld.md` as a template.  Duplicate the file, change the name and the metadata to match your project and `git add`, `git commit`, `git push`, then pull request.
+

@@ -23,6 +23,10 @@ Class Forum
 Class Website
 :   [http://saic-ats.github.io/ARTTECH-3135/](http://saic-ats.github.io/ARTTECH-3135/)
 
+Code Examples
+:   [https://github.com/SAIC-ATS/ARTTECH-3135/](https://github.com/SAIC-ATS/ARTTECH-3135/)
+
+
 TA
 :   [Billie Pate](http://www.billiepate.com/)
 
@@ -145,6 +149,16 @@ _(subject to change based on incoming skills and experience)_
 - Discussion
     - Discuss "What is Code"
     - Week 1 artists.
+
+- Drawing
+  - `ofPath`
+  - `ofPolyline`
+  - `ofSetColor`
+  - `ofFill`
+  - `ofDraw*`
+  - for loops
+  - if statements
+
 - Workshop: Introduction to the Terminal.
     - [Terminal Intro](https://github.com/olab-io/microWorkshops/blob/master/Terminal_Intro/Terminal_Intro.md)
 - Bookkeeping / Workshop

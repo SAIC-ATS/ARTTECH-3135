@@ -1,4 +1,4 @@
-This is one possible way to render Wall Drawing #328 by Sole Lewitt (1928-2007).
+This is one possible way to render Wall Drawing #328 by Sol Lewitt (1928-2007).
 
 _Wall Drawing #328_
 

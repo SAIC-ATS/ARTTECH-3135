@@ -13,6 +13,9 @@ due:        2016-09-23
     - Make sure you have cleaned up your previous repository and joined the new private repository.  If you can't see [this](https://github.com/SAIC/ARTTECH-3135-Fall-2016-Private), then go [here](http://talk.olab.io/t/class-3-assignment-part-1/907) for instructions.
 
 2. Read!
+  - Read: ofBook [OOps!](http://openframeworks.cc/ofBook/chapters/OOPs!.html)
+    - Why? _This gives an overview of the important concept of Object Oriented Programming. We'll be covering this in class._
+
     - Read: [Computer Vision for Artists And Designers](http://www.flong.com/texts/essays/essay_cvad/).
 
 3. Extend the Pong game created in class.  If you have trouble getting started, let us know on the forum!  Work together with others.  You can find starting code here.  Your job is to extend the game in a way that you will find interesting and may contribute to research for your future project.  Extend it in 3 or more of the following ways:

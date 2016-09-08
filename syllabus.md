@@ -21,8 +21,7 @@ Class Forum
 :   [https://ats.community/c/courses/arttech-3135](https://ats.community/c/courses/arttech-3135)
 
 Class Website
-:
-[http://saic-ats.github.io/ARTTECH-3135/](http://saic-ats.github.io/ARTTECH-3135/)
+:   [http://saic-ats.github.io/ARTTECH-3135/](http://saic-ats.github.io/ARTTECH-3135/)
 
 Code Examples
 :   [https://github.com/SAIC-ATS/ARTTECH-3135/](https://github.com/SAIC-ATS/ARTTECH-3135/)
@@ -57,7 +56,7 @@ __Key goals include:__
     - Documentation
     - [DIWO](http://furtherfield.org/projects/diwo-do-it-others-resource)
     - Publish
-    - Cult of Done (http://www.brepettis.com/blog/2009/3/3/the-cult-of-done-manifesto.html)
+    - [Cult of Done](http://www.brepettis.com/blog/2009/3/3/the-cult-of-done-manifesto.html)
 
 ### Methodology
 Students will engage in individual in-lab and home assignments, class presentations, lectures, discussions, assigned readings, group and individual projects and desk critiques.  Visiting artists / faculty may enhance the experience and offer additional perspectives.
@@ -116,7 +115,7 @@ _(subject to change based on incoming skills and experience)_
     - [Grasshopper](http://www.grasshopper3d.com/)
   - Procedural
     - [Processing](https://processing.org/)
-      - Getting started: http://hello.processing.org/
+      - Getting started: [http://hello.processing.org/](http://hello.processing.org/)
       - Variations
         - Javascript: [https://p5js.org/](https://p5js.org/)
         - Android: [http://android.processing.org/](http://android.processing.org/)
@@ -187,8 +186,8 @@ _(subject to change based on incoming skills and experience)_
 - Object Oriented Programming.  
 - OOP vs Structured Programming
     - C++ is often described as C + object oriented code.
-    - Structured -> top down approach
-    - OOP -> create models problem
+    - Structured → top down approach
+    - OOP → create models problem
     - Why OOP?
         - Duplicate code can be confusing and lead to bug if it is modified in the future. You will always forget something!
         - Modeling the world using objects can often be more intuitive, better differentiating between form and function.

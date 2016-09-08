@@ -9,7 +9,7 @@ due:        2016-09-14
 ---
 
 1. Bookkeeping!
-    - Make sure you can access the class forum here: https://ats.community/c/courses/arttech-3135.  If you can't, talk to me.  From this week forward, all class announcements will be posted on our private forum.  You are responsible for making sure that you get the announcements, so make sure you've got everything configured correctly.
+    - Make sure you can access the class forum [here](https://ats.community/c/courses/arttech-3135). If you can't, talk to me.  From this week forward, all class announcements will be posted on our private forum.  You are responsible for making sure that you get the announcements, so make sure you've got everything configured correctly.
 
 2. Read!
     - Read: ofBook: [Graphics](http://openframeworks.cc/ofBook/chapters/intro_to_graphics.html)
@@ -18,6 +18,7 @@ due:        2016-09-14
           - `ofPath`
             - some [documentation](http://openframeworks.cc/documentation/graphics/ofPath/)
             - an [example](https://github.com/openframeworks/openFrameworks/tree/master/examples/graphics/polygonExample)
+
 3. Learn about "Git" and "Github"
   - Why? _Git is a tool that you'll use all the time in this class and in your future lives as Creative Coders. It's by far the most popular way to share and manage code and should become a bit like breathing as you develop code._
     - If you learn by **reading**, consider this: [Version Control with Git](http://openframeworks.cc/ofBook/chapters/version_control_with_git.html)
@@ -31,7 +32,7 @@ due:        2016-09-14
       - _Iterating with a for-loop_ ([hint](https://www.lynda.com/C-tutorials/Iterating/182674/366536-4.html))
       - _Range-based for-loop_ ([hint](https://www.lynda.com/C-tutorials/Using-range-based-loop/182674/366537-4.html))
       - _Conditional statements `if`, `then`, `else`, `else if`_ ([hint](https://www.lynda.com/C-tutorials/Conditionals/182674/366533-4.html))
-      - _Variable "scope"_ ([hint](https://www.youtube.com/watch?v=qz_W4wlP-cg) and [hint](http://www.tutorialspoint.com/cplusplus/cpp_variable_scope.htm)) 
+      - _Variable "scope"_ ([hint](https://www.youtube.com/watch?v=qz_W4wlP-cg) and [hint](http://www.tutorialspoint.com/cplusplus/cpp_variable_scope.htm))
 
 5. Create an Interactive Experimental Drawing Application
     - An experimental drawing application **should** ...

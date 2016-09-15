@@ -98,7 +98,7 @@ Students wait-listed for classes will be admitted on a space available basis det
 
 _(subject to change based on incoming skills and experience)_
 
-#### Week 1
+#### Week 0
 - Introduction to course / syllabus.
 - Introduction to each other.
 - Interesting Recent Creative Coding Work
@@ -143,39 +143,47 @@ _(subject to change based on incoming skills and experience)_
   - What about variable "scope"?
   - Why won't my if-statement do what I wanted it to?
 
-#### Week 2
+#### Week 1
 
 - Discussion
     - Discuss "What is Code"
     - Week 1 artists.
 
-- Drawing
-  - `ofPath`
-  - `ofPolyline`
+- C++
+  - Range-for loops
+  - For loops
+  - `std::vector`
+
+- openFrameworks
   - `ofSetColor`
   - `ofFill`
   - `ofDraw*`
-  - for loops
-  - if statements
 
-- Workshop: Introduction to the Terminal.
-    - [Terminal Intro](https://github.com/olab-io/microWorkshops/blob/master/Terminal_Intro/Terminal_Intro.md)
-- Bookkeeping / Workshop
-    - [Discourse](http://discourse.org)
-    - [http://talk.olab.io](http://talk.olab.io) Review
-    - Terminal Intro
-        - [Terminal](https://github.com/olab-io/microWorkshops/blob/master/Terminal_Intro/Terminal_Intro.md)
-    - How to share and stay sane with git / github.
-        - [Git Intro](https://github.com/olab-io/microWorkshops/blob/master/Git_Intro/Git_Intro.md)
-        - [ofBook](https://github.com/openframeworks/ofBook/blob/master/chapters/version_control_with_git/chapter.md)
+#### Week 2
+- Review Assignment 0
+  - Questions from Assignment 0?
+- Review Assignment 1
+  - Show & Tell
+  - What was hard? What was easy?
+- C++ Syntax
+  - Reminder that tutorials are available ...
+    - https://www.lynda.com/C-tutorials/Up-Running-C/167922-2.html
+    - https://www.lynda.com/C-tutorials/C-Essential-Training/182674-2.html
+  - `if` statements
+  - `for` loops
+  - `%` modulo operator
+- `ofPixels`
+  - Quick review of binary numbers ...
+  - How are pixels / color represented?
+  - Looping
+  - Manually setting colors.
+  - Saving and loading images.
+    - Raw vs. encoded.
+    - Importance of encoding for "glitch".
 
 #### Week 3
-- Introduction to C++
-- Introduction to the ofSketch IDE.
-    - [https://github.com/olab-io/](https://github.com/olab-io/)
-    - Program flow and state, Pong Example
-
-#### Week 4
+- Simple State Machines
+- Traffic Lights
 - Review Pong Mods
 - Review helper functions and classes
     - `ofLerp`, `ofMap`, and `ofNormalize` all help us scale linearly scale numbers.
@@ -225,7 +233,7 @@ _(subject to change based on incoming skills and experience)_
     - In C++ we usually use a `std::vector` to hold a collection of variables.
     - We must define the contents of the `std::vector` using a template argument like `std::vector<int>` for a collection of integers.
 
-#### Week 5
+#### Week 4
 - Semantics
     - Difference between Functions and Methods / Member Functions.
     - Difference between parameters and arguments.
@@ -242,33 +250,36 @@ _(subject to change based on incoming skills and experience)_
     - Polymorphism "having many forms"
 - Pointers, memory
 
-#### Week 6
+#### Week 5
 - Brief Intro to XCode / IDEs
 - Pixels
 - Textures
 - Meshes
 - Mid Term Project Proposals Due + Discussion
 
-#### Week 7
+#### Week 6
 - Intro to computer vision / Machine Learning.
 - Optional IO Lab Training  
 - Mid Term Project Work
 
-#### Week 9
+#### Week 7
 - Computer Vision / Machine Learning Continued.
 - Mid Term Project Work
 
-#### Week 10
+#### Week 8
 - Mid Term Project Work
 
-#### Week 11
+#### Week 9
+- Mid Term Project Work
+
+#### Week 10
 - Mid Term Project Critiques
+
+#### Week 11
+- Final Project Work
 
 #### Week 13
 - Final Project Work
 
 #### Week 14
-- Final Project Work
-
-#### Week 15
 - Final Project Critiques

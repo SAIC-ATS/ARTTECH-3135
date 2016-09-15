@@ -14,9 +14,9 @@ class ofApp: public ofBaseApp
 {
 public:
     // We override the draw function provided by ofBaseApp.
-	void draw() override;
+    void draw() override;
 
-	// Our only variable -- a single value 0 - 255 for representing brightness.
-	int brightness = 0;
+    // Our only variable -- a single value 0 - 255 for representing brightness.
+    int brightness = 0;
 
 };

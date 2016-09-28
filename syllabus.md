@@ -222,7 +222,7 @@ _(subject to change based on incoming skills and experience)_
     - Warnings:
         - Don't try to model the world!
         - Design your classes and represent only salient attributes and actions that you need for your project.
-        - OOP isn't the solution to everything.  Most advanced programs are a combination of structured and object oriented approaches.
+        - OOP isn't the solution to everything.  Most advanced programs are a combination of functional and object oriented approaches.
 - Particle System Examples
     - Replace ball variables with a Ball class.
     - Replace x / y / z variables with `ofPoint` (which is an alias for `ofVec3f` or in 0.10.0+ `glm::vec3`).

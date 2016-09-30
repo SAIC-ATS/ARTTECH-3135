@@ -6,9 +6,9 @@ void ofApp::setup()
     // Set up our grabber.
     grabber.setup(640, 480);
 
-    grayscalePixels.allocate(640, 400, OF_PIXELS_GRAY);
-    backgroundPixels.allocate(640, 400, OF_PIXELS_GRAY);
-    frameToShowPixels.allocate(640, 400, OF_PIXELS_GRAY);
+    grayscalePixels.allocate(grabber.getWidth(), grabber.getHeight(), OF_PIXELS_GRAY);
+    backgroundPixels.allocate(grabber.getWidth(), grabber.getHeight(), OF_PIXELS_GRAY);
+    frameToShowPixels.allocate(grabber.getWidth(), grabber.getHeight(), OF_PIXELS_GRAY);
 }
 
 void ofApp::update()

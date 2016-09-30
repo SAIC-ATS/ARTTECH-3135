@@ -9,7 +9,7 @@ due:        2016-10-05
 ---
 
 1. Read the following.  This is an introduction to artists using computer vision in their work.
-  - http://www.flong.com/texts/essays/essay_cvad/
+  - [http://www.flong.com/texts/essays/essay_cvad/](http://www.flong.com/texts/essays/essay_cvad/)
 
 2. Coding!
   - Building from the [Background Subtraction Example](https://github.com/SAIC-ATS/ARTTECH-3135/tree/master/Week_04/00_BackgroundSubtraction), use the resulting mask of the "foreground" to only allow the color image of the foreground through.

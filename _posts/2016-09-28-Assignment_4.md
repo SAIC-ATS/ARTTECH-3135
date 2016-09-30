@@ -20,5 +20,5 @@ due:        2016-10-05
       - Instead of setting the background to black, set it to a video (or image) of your choice.  For reference, Apple's Photo Booth has filters like this that allow you to set the background to the video or scene of your choice.
       - Tips:  
           - There are lots of ways to achieve this effect ...
-              1. Instead of setting each "background" pixel to black, set it to the corresponding pixel color from your background video.
+              1. Instead of setting each "background" pixel to black, set it to the corresponding pixel color from your background video (make sure the foreground and background videos are the same size!!).
               2. Instead of setting each "background" pixel to black, set it to transparent (`ofColor(0, 0, 0, 0)`).  Then just play the background video in the underneath the foreground pixels.

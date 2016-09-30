@@ -1,7 +1,7 @@
 ---
 layout:     assignment
 categories: assignment
-title:      Assignment 3
+title:      Assignment 4
 subtitle:   Intro to computer vision ...
 author:     bakercp
 date:       2016-09-28 00:00:00

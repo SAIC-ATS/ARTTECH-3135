@@ -8,5 +8,5 @@ int main()
 	settings.width = 1024;
 	settings.height = 768;
 	ofCreateWindow(settings);
-	ofRunApp(std::make_shared<ofApp>());
+	return ofRunApp(std::make_shared<ofApp>());
 }

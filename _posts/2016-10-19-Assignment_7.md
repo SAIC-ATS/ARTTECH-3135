@@ -1,8 +1,8 @@
 ---
 layout:     assignment
 categories: assignment
-title:      Assignment 6
-subtitle:   Snake!
+title:      Assignment 7
+subtitle:   Addon Merge!
 author:     bakercp
 date:       2016-10-19 00:00:00
 due:        2016-10-26

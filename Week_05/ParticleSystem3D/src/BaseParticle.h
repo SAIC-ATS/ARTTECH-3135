@@ -21,7 +21,7 @@ public:
 	    createdFrameCount = ofGetFrameNum();
 	}
 
-    /// \brief The BaseParticle's draw method.
+    /// \brief The default destructor for the BaseParticle.
     virtual ~BaseParticle()
     {
     }

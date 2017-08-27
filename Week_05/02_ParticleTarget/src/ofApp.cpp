@@ -36,7 +36,16 @@ void ofApp::update()
         }
     }
 
-    blend = ofMap(ofGetMouseX(), 0, ofGetWidth(), 0, 1, true);
+    if (goingUp)
+    {
+        blend += 0.01;
+    }
+    else
+    {
+        blend -= 0.01;
+    }
+
+    blend = ofClamp(blend, 0, 1);
 }
 
 
@@ -56,3 +65,9 @@ void ofApp::draw()
     }
 
 }
+
+void ofApp::keyPressed(int key)
+{
+    goingUp = !goingUp;
+}
+

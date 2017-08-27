@@ -1,0 +1,7 @@
+css:
+    fontawesome: //maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css
+    bootstrap: //maxcdn.bootstrapcdn.com/bootswatch/3.3.7/yeti/bootstrap.min.css
+js:
+    jquery: //code.jquery.com/jquery-2.2.4.min.js
+    bootstrap: //maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js
+

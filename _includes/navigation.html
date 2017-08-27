@@ -1,0 +1,25 @@
+        <nav class="navbar navbar-default" role="navigation">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{ site.baseurl }}">{{ site.name }}</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                {% for page in site.pages %}
+                {% if page.navigation != false %}
+                <li>
+                    <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </nav>

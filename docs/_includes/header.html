@@ -5,11 +5,15 @@
         <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
         <meta charset="utf-8">
         <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="{{ page.description }}">
         <!-- Bootstrap styles -->
-        <link rel="stylesheet" href="{{ site.data.assets.css.bootstrap }}">
+        <link rel="stylesheet" href="{{ site.data.assets.css.bootstrap.href }}" integrity="{{ site.data.assets.css.bootstrap.integrity }}" crossorigin="{{ site.data.assets.css.bootstrap.crossorigin }}">
         <!-- FontAwesome -->
-        <link rel="stylesheet" href="{{ site.data.assets.css.fontawesome }}">
+        <link rel="stylesheet" href="{{ site.data.assets.css.fontawesome.href }}" integrity="{{ site.data.assets.css.fontawesome.integrity }}" crossorigin="{{ site.data.assets.css.fontawesome.crossorigin }}">
+        <!-- Custom -->
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
     </head>
     <body>
+
+

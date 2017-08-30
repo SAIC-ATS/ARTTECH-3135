@@ -1,6 +1,8 @@
 docs/html
 docs/tagfile.xml
 docs/*.tag
+docs/_site
+docs/.jekyll-metadata
 
 raw/
 

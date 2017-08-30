@@ -6,16 +6,19 @@ title:  Syllabus
 ## Interactive Art / Creative Code, ARTTECH 3135
 
 Semester, Year
-:   Fall, 2016
+:   Fall, 2017
 
 Meeting Times
-:   Wednesday 9am-4pm
+:   (-002) Mondays 9am-4pm, (-001) Wednesdays 9am-4pm
 
 Meeting Location
 :   MacLean 401
 
 Instructor
-:   [Christopher Baker](http://christopherbaker.net)
+:   [Christopher Baker](https://christopherbaker.net)
+
+Teaching Assistant
+:   TBA
 
 Class Forum
 :   [https://ats.community/c/courses/arttech-3135](https://ats.community/c/courses/arttech-3135)
@@ -26,16 +29,13 @@ Class Website
 Code Examples
 :   [https://github.com/SAIC-ATS/ARTTECH-3135/](https://github.com/SAIC-ATS/ARTTECH-3135/)
 
-TA
-:   [Billie Pate](http://www.billiepate.com/)
-
 --------------------------------------------------------------------------------
 
 ### Instructor Bio
 [Christopher Baker](http://christopherbaker.net) is an artist whose work engages the rich collection of social, technological and ideological networks present in the urban landscape. He creates artifacts and situations that reveal and generate relationships within and between these networks.  Christopher’s work has been presented worldwide and he contributes to the open source community at [http://github.com/bakercp](http://github.com/bakercp).
 
-### TA Bio
-[Billie Pate](http://www.billiepate.com/) is an LA based experimental media artist. She creates technology-driven visual art.
+### Teaching Assistant Bio
+TBA
 
 --------------------------------------------------------------------------------
 
@@ -56,7 +56,7 @@ __Key goals include:__
     - Documentation
     - [DIWO](http://furtherfield.org/projects/diwo-do-it-others-resource)
     - Publish
-    - [Cult of Done](http://www.brepettis.com/blog/2009/3/3/the-cult-of-done-manifesto.html)
+    - [Cult of Done Manifesto](https://medium.com/@bre/the-cult-of-done-manifesto-724ca1c2ff13)
 
 ### Methodology
 Students will engage in individual in-lab and home assignments, class presentations, lectures, discussions, assigned readings, group and individual projects and desk critiques.  Visiting artists / faculty may enhance the experience and offer additional perspectives.
@@ -66,7 +66,7 @@ The course may include workshops and several projects, relevant technical and th
 
 ### Class Text
 
-- [ofBook](https://github.com/openframeworks/ofBook)
+- [ofBook](http://openframeworks.cc/ofBook/chapters/foreword.html)
 
 ### Reading and other Resources
 Posted on the course website.
@@ -82,14 +82,15 @@ Provided by the student as needed.
 _Tip: If you are going to be absent, late to class, or need to depart early, please contact me BEFORE class starts.  This is so I can make sure you have what you need to succeed!_
 
 ### Wait Lists
-Students wait-listed for classes will be admitted on a space available basis determined by instructors’ discretion (in consultation with the department chair).
+Students wait-listed for classes will be admitted on a space available basis determined by instructor’s discretion (in consultation with the department chair).
 
 ### Grading Procedure/Criteria
 - Grades are credit / no-credit for this course. Credit is based on several factors: 30% participation (discussions, critiques, etc), 70% projects / assignments.
+- All assignments must be completed and submitted as instructed.
 - Incomplete grades will not be offered.
 
 ### Writing Assistance
-[Writing Center](http://www.saic.edu/webspaces/portal/advising/write\_center.html)
+[Writing Center](http://www.saic.edu/academics/academicresources/writingcenter/)
 
 ### Special Needs
 [Disability and Learning Resource Center](http://www.saic.edu/lifeatsaic/wellnesscenter/disabilityandlearningresourcecenter/)
@@ -98,7 +99,7 @@ Students wait-listed for classes will be admitted on a space available basis det
 
 _(subject to change based on incoming skills and experience)_
 
-#### Week 0
+#### Week 00
 - Introduction to course / syllabus.
 - Introduction to each other.
 - Interesting Recent Creative Coding Work
@@ -143,8 +144,7 @@ _(subject to change based on incoming skills and experience)_
   - What about variable "scope"?
   - Why won't my if-statement do what I wanted it to?
 
-#### Week 1
-
+#### Week 01
 - Discussion
     - Discuss "What is Code"
     - Week 1 artists.
@@ -159,10 +159,10 @@ _(subject to change based on incoming skills and experience)_
   - `ofFill`
   - `ofDraw*`
 
-#### Week 2
-- Review Assignment 0
-  - Questions from Assignment 0?
-- Review Assignment 1
+#### Week 02
+- Review Assignment 00
+  - Questions from Assignment 00?
+- Review Assignment 01
   - Show & Tell
   - What was hard? What was easy?
 - C++ Syntax
@@ -181,7 +181,7 @@ _(subject to change based on incoming skills and experience)_
     - Raw vs. encoded.
     - Importance of encoding for "glitch".
 
-#### Week 3
+#### Week 03
 - Simple State Machines
 - Traffic Lights
 - Review Pong Mods
@@ -233,7 +233,7 @@ _(subject to change based on incoming skills and experience)_
     - In C++ we usually use a `std::vector` to hold a collection of variables.
     - We must define the contents of the `std::vector` using a template argument like `std::vector<int>` for a collection of integers.
 
-#### Week 4
+#### Week 04
 - Semantics
     - Difference between Functions and Methods / Member Functions.
     - Difference between parameters and arguments.
@@ -250,26 +250,26 @@ _(subject to change based on incoming skills and experience)_
     - Polymorphism "having many forms"
 - Pointers, memory
 
-#### Week 5
-- Brief Intro to XCode / IDEs
+#### Week 05
+- Brief Intro to Xcode / IDEs
 - Pixels
 - Textures
 - Meshes
 - Mid Term Project Proposals Due + Discussion
 
-#### Week 6
+#### Week 06
 - Intro to computer vision / Machine Learning.
 - Optional IO Lab Training  
 - Mid Term Project Work
 
-#### Week 7
+#### Week 07
 - Computer Vision / Machine Learning Continued.
 - Mid Term Project Work
 
-#### Week 8
+#### Week 08
 - Mid Term Project Work
 
-#### Week 9
+#### Week 09
 - Mid Term Project Work
 
 #### Week 10
@@ -279,7 +279,4 @@ _(subject to change based on incoming skills and experience)_
 - Final Project Work
 
 #### Week 13
-- Final Project Work
-
-#### Week 14
 - Final Project Critiques

@@ -1,6 +1,7 @@
 ---
 layout: page
 title:  People
+published: false
 ---
 
 <ul>

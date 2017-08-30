@@ -1,15 +1,18 @@
 
-        <div class="navbar navbar-default">
-            <div class="container">
-                <p class="navbar-text">
-                    {{ site.name }} <small>{{ site.description }}</small>
-                </p>
-            </div>
-        </div>
+        <footer class="footer">
+          <div class="container">
+            <span class="text-muted">{{ site.name }} <small>{{ site.description }}</small></span>
+          </div>
+        </footer>
+
 
         <!-- jQuery -->
-        <script src="{{ site.data.assets.js.jquery }}"></script>
+        <script src="{{ site.data.assets.js.jquery.src }}" integrity="{{ site.data.assets.js.jquery.integrity }}" crossorigin="{{ site.data.assets.js.jquery.crossorigin }}"></script>
+
+        <!-- Popper -->
+        <script src="{{ site.data.assets.js.popper.src }}" integrity="{{ site.data.assets.js.popper.integrity }}" crossorigin="{{ site.data.assets.js.popper.crossorigin }}"></script>
+
         <!-- Bootstrap -->
-        <script src="{{ site.data.assets.js.bootstrap }}"></script>
+        <script src="{{ site.data.assets.js.bootstrap.src }}" integrity="{{ site.data.assets.js.bootstrap.integrity }}" crossorigin="{{ site.data.assets.js.bootstrap.crossorigin }}"></script>
     </body>
 </html>

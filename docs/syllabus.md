@@ -3,7 +3,7 @@ layout: page
 title:  Syllabus
 ---
 
-## Interactive Art / Creative Code, ARTTECH 3135
+## Interactive Art / Creative Code, ARTTECH 3135 / 5135
 
 Semester, Year
 :   Fall, 2017
@@ -18,13 +18,13 @@ Instructor
 :   [Christopher Baker](https://christopherbaker.net)
 
 Teaching Assistant
-:   TBA
+:   (-002) Chris Martin (-001) [Amay Kataria](https://eulphean.github.io/)
 
 Class Forum
 :   [https://ats.community/c/courses/arttech-3135](https://ats.community/c/courses/arttech-3135)
 
 Class Website
-:   [http://saic-ats.github.io/ARTTECH-3135/](http://saic-ats.github.io/ARTTECH-3135/)
+:   [http://saic-ats.github.io/ARTTECH-3135/](https://saic-ats.github.io/ARTTECH-3135/)
 
 Code Examples
 :   [https://github.com/SAIC-ATS/ARTTECH-3135/](https://github.com/SAIC-ATS/ARTTECH-3135/)
@@ -32,7 +32,7 @@ Code Examples
 --------------------------------------------------------------------------------
 
 ### Instructor Bio
-[Christopher Baker](http://christopherbaker.net) is an artist whose work engages the rich collection of social, technological and ideological networks present in the urban landscape. He creates artifacts and situations that reveal and generate relationships within and between these networks.  Christopher’s work has been presented worldwide and he contributes to the open source community at [http://github.com/bakercp](http://github.com/bakercp).
+[Christopher Baker](https://christopherbaker.net) is an artist whose work engages the rich collection of social, technological and ideological networks present in the urban landscape. He creates artifacts and situations that reveal and generate relationships within and between these networks.  Christopher’s work has been presented worldwide and he contributes to the open source community at [https://github.com/bakercp](https://github.com/bakercp).
 
 ### Teaching Assistant Bio
 TBA
@@ -111,10 +111,11 @@ _(subject to change based on incoming skills and experience)_
   - Online
     - [Creative Applications](http://www.creativeapplications.net/)
 - Survey of Creative Coding Platforms.
-  - Patch Based / Visual
+  - Visual Programming Languages
     - [Max](https://cycling74.com/products/max/)
     - [Grasshopper](http://www.grasshopper3d.com/)
-  - Procedural
+    - [Touch Designer](https://www.derivative.ca)
+  - Non-visual Programming Language
     - [Processing](https://processing.org/)
       - Getting started: [http://hello.processing.org/](http://hello.processing.org/)
       - Variations

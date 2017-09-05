@@ -41,7 +41,7 @@ If you would like to switch your default text editor to something simpler, like 
 git config --global core.editor "nano"
 ```
 
-If you'd like to use a GUI based text editor, you can use something like Atom.io by following [these instructions](http://stackoverflow.com/a/31389989/1518329).
+If you'd like to use a GUI based text editor, you can use something like Atom.io by following [these instructions](https://stackoverflow.com/a/31389989/1518329).
 
 ### Submitting Changes
 

@@ -9,18 +9,6 @@ void ofApp::draw()
     ofBackground(ofColor::black);
 
     ////////////////////////////////////////////////////////////////////////////
-    // "... within which are white vertical parallel lines ... "
-    ////////////////////////////////////////////////////////////////////////////
-
-    // Set the distance between the vertical parallel lines.
-    float xLineDistance = 8;
-
-    for (float x = 0; x < ofGetWidth(); x += xLineDistance)
-    {
-        ofDrawLine(x, 0, x, ofGetHeight());
-    }
-
-    ////////////////////////////////////////////////////////////////////////////
     // "...a white circle within which are white vertical parallel lines ..."
     ////////////////////////////////////////////////////////////////////////////
 
@@ -42,19 +30,32 @@ void ofApp::draw()
     // The radius of the circle.
     float radius = size / 2;
 
-    // Construct a mask.
-    ofPath circleMask;
-    circleMask.setFillColor(ofColor::black);
-    circleMask.rectangle(0, 0, ofGetWidth(), ofGetHeight());
-    circleMask.setCircleResolution(64);
-    circleMask.circle(middleX, middleY, radius);
-    circleMask.draw();
-
     // When drawing large circles, we might want to set a higher resolution.
     ofSetCircleResolution(64);
 
     // Draw a circle.
     ofDrawCircle(middleX, middleY, radius);
+
+    // Set the distance between the vertical parallel lines.
+    float xLineDistance = 8;
+
+    // Cycle through vertical lines in circle.
+    for (float x = 0; x < radius; x += xLineDistance)
+    {
+        // We already know the x value, so we calculate the y-height at x and
+        // and then mirror to the bottom half.
+
+        // A function y(x) to find the y-height (from the origin) of a circle at
+        // a given x.
+        float y = radius * std::sin(std::acos(x / radius));
+
+        // Draw lines to the right.
+        ofDrawLine(x + middleX, middleY - y, x + middleX, middleY + y);
+
+        // Draw lines to the left.
+        ofDrawLine(middleX - x, middleY - y, middleX - x, middleY + y);
+
+    }
 
     ////////////////////////////////////////////////////////////////////////////
     /// "... and a white parallelogram within which are white horizontal
@@ -92,16 +93,16 @@ void ofApp::draw()
     float bottomY = middleY + height / 2;
 
     // The point p0.
-    ofVec2f p0(middleX - width / 2 + offset, topY);
+    glm::vec2 p0(middleX - width / 2 + offset, topY);
 
     // The point p1.
-    ofVec2f p1(middleX + width / 2 + offset, topY);
+    glm::vec2 p1(middleX + width / 2 + offset, topY);
 
     // The point p0.
-    ofVec2f p2(middleX + width / 2 - offset, bottomY);
+    glm::vec2 p2(middleX + width / 2 - offset, bottomY);
 
     // The point p1.
-    ofVec2f p3(middleX - width / 2 - offset, bottomY);
+    glm::vec2 p3(middleX - width / 2 - offset, bottomY);
 
     // Construct and draw a paralellogram.
     ofPath parallelogram;
@@ -123,8 +124,8 @@ void ofApp::draw()
     {
         float xStart = ofMap(y, topY, bottomY, p0.x, p3.x);
 
-        ofVec2f lineStart(xStart, y);
-        ofVec2f lineEnd(xStart + width, y);
+        glm::vec2 lineStart(xStart, y);
+        glm::vec2 lineEnd(xStart + width, y);
         ofDrawLine(lineStart, lineEnd);
     }
 

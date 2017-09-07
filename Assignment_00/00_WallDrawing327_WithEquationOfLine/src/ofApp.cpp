@@ -30,14 +30,17 @@ void ofApp::draw()
     // Set the drawing color to white.
     ofSetColor(ofColor::white);
 
+    // Width between the horizontal and vertical lines.
+    float lineSpacing = 8;
+
     // The height of the trapezoid.
     float height = ofGetHeight() * 0.9;
 
-    // The width of the top line.
-    float topWidth = ofGetWidth() * 0.5;
-
     // The width of the bottom line.
     float bottomWidth = ofGetWidth() * 0.9;
+
+    // The width of the top line.
+    float topWidth = ofGetWidth() * 0.5;
 
     // The middle of the window in the x-direction.
     float middleX = ofGetWidth() / 2;
@@ -52,78 +55,90 @@ void ofApp::draw()
     float bottomY = middleY + height / 2;
 
     // The point p0.
-    ofVec2f p0(middleX - topWidth / 2, topY);
+    float p0x = middleX - topWidth / 2;
+    float p0y = topY;
 
     // The point p1.
-    ofVec2f p1(middleX + topWidth / 2, topY);
+    float p1x = middleX + topWidth / 2;
+    float p1y = topY;
 
     // The point p0.
-    ofVec2f p2(middleX + bottomWidth / 2, bottomY);
+    float p2x = middleX + bottomWidth / 2;
+    float p2y = bottomY;
 
     // The point p1.
-    ofVec2f p3(middleX - bottomWidth / 2, bottomY);
+    float p3x = middleX - bottomWidth / 2;
+    float p3y = bottomY;
 
     // Draw the four trapezoid lines.
-    ofDrawLine(p0, p1);
-    ofDrawLine(p1, p2);
-    ofDrawLine(p2, p3);
-    ofDrawLine(p3, p0);
+    ofDrawLine(p0x, p0y, p1x, p1y);
+    ofDrawLine(p1x, p1y, p2x, p2y);
+    ofDrawLine(p2x, p2y, p3x, p3y);
+    ofDrawLine(p3x, p3y, p0x, p0y);
 
     ////////////////////////////////////////////////////////////////////////////
     // "... within which are white vertical parallel lines ... "
     ////////////////////////////////////////////////////////////////////////////
 
-    // Figure out if the top or bottom is wider.
-    float maximumWidth = std::max(topWidth, bottomWidth);
-
-    // Set the distance between the vertical parallel lines.
-    float xLineDistance = 8;
-
-    // We will cycle through all vertical lines at spacing xLineDistance and
-    // deterimne where they intersect our four trapezoid lines.
-    for (int x = 0; x < ofGetWidth(); x += xLineDistance)
+    for (float x = p3x; x <= p2x; x += lineSpacing)
     {
-        ofVec2f lineStart(x, 0);
-        ofVec2f lineEnd(x, ofGetHeight());
-
-        ofVec2f intersection;
-
-        // We will search for the minimum and maximum Y values representing
-        // intersections with our vertical lines.
-        float minY = ofGetHeight();
-        float maxY = 0;
-
-        // Test line 0
-        if (ofLineSegmentIntersection(lineStart, lineEnd, p0, p1, intersection))
+        // We have three conditions, the right triangle ...
+        if (x <= p0x)
         {
-            minY = std::min(minY, intersection.y);
-            maxY = std::max(maxY, intersection.y);
+            // The slope-intercept form of a line!
+
+            // y = m * x + b; where m = Δy / Δx = (y1 - y0) / (x1 - x0)
+
+            // Calculate the slope `m` of the line that connects p0 and p3
+            float Δy = p3y - p0y;
+            float Δx = p3x - p0x;
+
+            float m = Δy / Δx;
+
+            // Calculate the intercept `b`.
+            //
+            // b = y - m * x
+            //
+            // Choose either point, p0 or p3 to solve for b.
+            float b = p0y - m * p0x;
+
+            // Now calculate y for our current x;
+            float y = m * x + b;
+
+            // Now draw the line!
+            ofDrawLine(x, bottomY, x, y);
         }
-
-        // Test line 1
-        if (ofLineSegmentIntersection(lineStart, lineEnd, p1, p2, intersection))
+        // ... the middle box ...
+        else if (x <= p1x)
         {
-            minY = std::min(minY, intersection.y);
-            maxY = std::max(maxY, intersection.y);
+            // A simple line.
+            ofDrawLine(x, bottomY, x, topY);
         }
-
-        // Test line 2
-        if (ofLineSegmentIntersection(lineStart, lineEnd, p2, p3, intersection))
+        // ... and the left triangle.
+        else
         {
-            minY = std::min(minY, intersection.y);
-            maxY = std::max(maxY, intersection.y);
-        }
+            // The slope-intercept form of a line!
 
-        // Test line 3
-        if (ofLineSegmentIntersection(lineStart, lineEnd, p3, p0, intersection))
-        {
-            minY = std::min(minY, intersection.y);
-            maxY = std::max(maxY, intersection.y);
-        }
+            // y = m * x + b; where m = Δy / Δx = (y1 - y0) / (x1 - x0)
 
-        if (maxY > 0 and minY < ofGetHeight())
-        {
-            ofDrawLine(x, minY, x, maxY);
+            // Calculate the slope `m` of the line that connects p1 and p2
+            float Δy = p1y - p2y;
+            float Δx = p1x - p2x;
+
+            float m = Δy / Δx;
+
+            // Calculate the intercept `b`.
+            //
+            // b = y - m * x
+            //
+            // Choose either point, p0 or p3 to solve for b.
+            float b = p1y - m * p1x;
+
+            // Now calculate y for our current x;
+            float y = m * x + b;
+
+            // Now draw the line!
+            ofDrawLine(x, bottomY, x, y);
         }
     }
 
@@ -161,19 +176,15 @@ void ofApp::draw()
     ////////////////////////////////////////////////////////////////////////////
 
     // Set the distance between the horizontal parallel lines.
-    float yLineDistance = xLineDistance;
-
-    for (float y = middleY - halfSquareSize; y < middleY + halfSquareSize; y += yLineDistance)
+    for (float y = middleY - halfSquareSize; y < middleY + halfSquareSize; y += lineSpacing)
     {
-        ofVec2f lineStart(middleX - halfSquareSize, y);
-        ofVec2f lineEnd(middleX + halfSquareSize, y);
-        ofDrawLine(lineStart, lineEnd);
+        ofDrawLine(middleX - halfSquareSize, y, middleX + halfSquareSize, y);
     }
 
     ////////////////////////////////////////////////////////////////////////////
-    // "... The vertical lines within the circle do not enter the parallelogram,
-    ///     and the horizontal lines within the parallelogram do not enter the
-    ///     circle."
+    // ... The vertical lines within the trapezoid do not enter the square ...
+    // ... and the horizontal lines within the square do not enter the ...
+    // ... trapezoid."
     ////////////////////////////////////////////////////////////////////////////
 
     // Yep, did that already.

@@ -9,18 +9,6 @@ void ofApp::draw()
     ofBackground(ofColor::black);
 
     ////////////////////////////////////////////////////////////////////////////
-    // "... within which are white vertical parallel lines ... "
-    ////////////////////////////////////////////////////////////////////////////
-
-    // Set the distance between the vertical parallel lines.
-    float xLineDistance = 8;
-
-    for (float x = 0; x < ofGetWidth(); x += xLineDistance)
-    {
-        ofDrawLine(x, 0, x, ofGetHeight());
-    }
-
-    ////////////////////////////////////////////////////////////////////////////
     // "... a white trapezoid ..."
     ////////////////////////////////////////////////////////////////////////////
     //
@@ -64,35 +52,81 @@ void ofApp::draw()
     float bottomY = middleY + height / 2;
 
     // The point p0.
-    ofVec2f p0(middleX - topWidth / 2, topY);
+    glm::vec2 p0(middleX - topWidth / 2, topY);
 
     // The point p1.
-    ofVec2f p1(middleX + topWidth / 2, topY);
+    glm::vec2 p1(middleX + topWidth / 2, topY);
 
     // The point p0.
-    ofVec2f p2(middleX + bottomWidth / 2, bottomY);
+    glm::vec2 p2(middleX + bottomWidth / 2, bottomY);
 
     // The point p1.
-    ofVec2f p3(middleX - bottomWidth / 2, bottomY);
-
-    // Construct a mask.
-    ofPath trapezoidMask;
-    trapezoidMask.setFillColor(ofColor::black);
-    trapezoidMask.rectangle(0, 0, ofGetWidth(), ofGetHeight());
-    trapezoidMask.moveTo(p0);
-    trapezoidMask.lineTo(p1);
-    trapezoidMask.lineTo(p2);
-    trapezoidMask.lineTo(p3);
-    trapezoidMask.lineTo(p0);
-    trapezoidMask.draw();
+    glm::vec2 p3(middleX - bottomWidth / 2, bottomY);
 
     // Draw the four trapezoid lines.
-    // We coudl do this OR draw our mask outside of the frame in order to hide
-    // the stroke outlines.
     ofDrawLine(p0, p1);
     ofDrawLine(p1, p2);
     ofDrawLine(p2, p3);
     ofDrawLine(p3, p0);
+
+    ////////////////////////////////////////////////////////////////////////////
+    // "... within which are white vertical parallel lines ... "
+    ////////////////////////////////////////////////////////////////////////////
+
+    // Figure out if the top or bottom is wider.
+    float maximumWidth = std::max(topWidth, bottomWidth);
+
+    // Set the distance between the vertical parallel lines.
+    float xLineDistance = 8;
+
+    // We will cycle through all vertical lines at spacing xLineDistance and
+    // deterimne where they intersect our four trapezoid lines.
+    for (int x = 0; x < ofGetWidth(); x += xLineDistance)
+    {
+        glm::vec2 lineStart(x, 0);
+        glm::vec2 lineEnd(x, ofGetHeight());
+
+        glm::vec2 intersection;
+
+        // We will search for the minimum and maximum Y values representing
+        // intersections with our vertical lines.
+        float minY = ofGetHeight();
+        float maxY = 0;
+
+        // Test line 0
+        if (ofLineSegmentIntersection(lineStart, lineEnd, p0, p1, intersection))
+        {
+            minY = std::min(minY, intersection.y);
+            maxY = std::max(maxY, intersection.y);
+        }
+
+        // Test line 1
+        if (ofLineSegmentIntersection(lineStart, lineEnd, p1, p2, intersection))
+        {
+            minY = std::min(minY, intersection.y);
+            maxY = std::max(maxY, intersection.y);
+        }
+
+        // Test line 2
+        if (ofLineSegmentIntersection(lineStart, lineEnd, p2, p3, intersection))
+        {
+            minY = std::min(minY, intersection.y);
+            maxY = std::max(maxY, intersection.y);
+        }
+
+        // Test line 3
+        if (ofLineSegmentIntersection(lineStart, lineEnd, p3, p0, intersection))
+        {
+            minY = std::min(minY, intersection.y);
+            maxY = std::max(maxY, intersection.y);
+        }
+
+        if (maxY > 0 and minY < ofGetHeight())
+        {
+            ofDrawLine(x, minY, x, maxY);
+        }
+    }
+
 
     ////////////////////////////////////////////////////////////////////////////
     // "... and a white square ... "
@@ -131,15 +165,15 @@ void ofApp::draw()
 
     for (float y = middleY - halfSquareSize; y < middleY + halfSquareSize; y += yLineDistance)
     {
-        ofVec2f lineStart(middleX - halfSquareSize, y);
-        ofVec2f lineEnd(middleX + halfSquareSize, y);
+        glm::vec2 lineStart(middleX - halfSquareSize, y);
+        glm::vec2 lineEnd(middleX + halfSquareSize, y);
         ofDrawLine(lineStart, lineEnd);
     }
 
     ////////////////////////////////////////////////////////////////////////////
-    // "... The vertical lines within the circle do not enter the parallelogram,
-    ///     and the horizontal lines within the parallelogram do not enter the
-    ///     circle."
+    // ... The vertical lines within the trapezoid do not enter the square ...
+    // ... and the horizontal lines within the square do not enter the ...
+    // ... trapezoid."
     ////////////////////////////////////////////////////////////////////////////
 
     // Yep, did that already.

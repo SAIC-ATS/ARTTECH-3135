@@ -8,7 +8,7 @@ class ofApp: public ofBaseApp
 {
 public:
     // We override the draw function provided by ofBaseApp.
-	void draw() override;
+    void draw() override;
 
 
 };

@@ -12,13 +12,13 @@ Create the following images using openFrameworks.
 - Use at least one `for` loop.
 - Use a `float` variable to control the distance between the lines.
 
-![](01.png)
+![](Image_01.png)
 
 ## Image_02
 - Use at least one `for` loop.
 - Each line drawn, should be 2 times the distance of the last line.
 
-![](Image_00.png)
+![](Image_02.png)
 
 ## Image_03
 - Use at least one `for` loop.

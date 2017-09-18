@@ -6,8 +6,8 @@ docs/.jekyll-metadata
 
 raw/
 
-config.make
-Makefile
+#config.make
+#Makefile
 
 Project.xcconfig
 *.xcodeproj

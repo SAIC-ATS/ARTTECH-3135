@@ -1,6 +1,7 @@
 ---
 layout: page
 title:  Syllabus
+
 ---
 
 ## Interactive Art / Creative Code, ARTTECH 3135 / 5135
@@ -9,7 +10,7 @@ Semester, Year
 :   Fall, 2017
 
 Meeting Times
-:   (-002) Mondays 9am-4pm, (-001) Wednesdays 9am-4pm
+:   (-001) Wednesdays 9am-4pm, (-002) Mondays 9am-4pm
 
 Meeting Location
 :   MacLean 401
@@ -17,8 +18,8 @@ Meeting Location
 Instructor
 :   [Christopher Baker](https://christopherbaker.net)
 
-Teaching Assistant
-:   (-002) Chris Martin (-001) [Amay Kataria](https://eulphean.github.io/)
+Teaching Assistant(s)
+:   (-001) [Amay Kataria](https://eulphean.github.io/) (-002) Chris Martin
 
 Class Forum
 :   [https://ats.community/c/courses/arttech-3135](https://ats.community/c/courses/arttech-3135)
@@ -34,9 +35,6 @@ Code Examples
 ### Instructor Bio
 [Christopher Baker](https://christopherbaker.net) is an artist whose work engages the rich collection of social, technological and ideological networks present in the urban landscape. He creates artifacts and situations that reveal and generate relationships within and between these networks.  Christopher’s work has been presented worldwide and he contributes to the open source community at [https://github.com/bakercp](https://github.com/bakercp).
 
-### Teaching Assistant Bio
-TBA
-
 --------------------------------------------------------------------------------
 
 ### Course Description
@@ -46,10 +44,10 @@ This studio course investigates the creative possibilities in programming, from 
 
 __Key goals include:__
 
-- Working knowledge of contemporary open source coding tools.
-- Working knowledge of contemporary open hardware tools
+- Intermediate working knowledge of creative coding tools and techniques.
+- Working knowledge of the landscape of contemporary open source coding tools.
+- Working knowledge of coding tools such as Git, Xcode, Terminal, etc.
 - Working knowledge of contemporary artists and groups that shape the fields of interactive art and creative code.
-- Working knowledge of intermediate linux/unix OS features (scripting, terminal, automation, etc)
 
 ### Course Values
 - Sharing / Open
@@ -99,7 +97,10 @@ Students wait-listed for classes will be admitted on a space available basis det
 
 _(subject to change based on incoming skills and experience)_
 
-#### Week 00
+#### Session 00
+- Before we get Started ...
+  - Begin download Xcode 8 from the App Store (will require OS 10.12+)
+
 - Introduction to course / syllabus.
 - Introduction to each other.
 - Interesting Recent Creative Coding Work
@@ -131,38 +132,96 @@ _(subject to change based on incoming skills and experience)_
     - Software
         - [openFrameworks](http://openframeworks.cc/) (C/C++)
 - Getting Started
-    - Code Comments (e.g. why? [this](http://qz.com/726338/the-code-that-took-america-to-the-moon-was-just-published-to-github-and-its-like-a-1960s-time-capsule/))
-    - What is compiling?
-    - Hello World?!
-    - Framework
-    - Shapes
-    - Colors
-    - Interactivity
-- Common Errors
-  - What is your compiler target?
-  - Did you accidentally add a break point?
-  - How do I start over?
-  - What about variable "scope"?
-  - Why won't my if-statement do what I wanted it to?
+    - C++
+      - Brief Intro to Xcode / IDEs
+      - Code Comments (e.g. why? [this](http://qz.com/726338/the-code-that-took-america-to-the-moon-was-just-published-to-github-and-its-like-a-1960s-time-capsule/))
+      - What is compiling?
+      - Hello World! in C++
+      - What is a framework?
+    - openFrameworks
+      - Installing openFrameworks
+        - Where does the folder go?
+        - Where do the projects go?
+        - What is in the openFrameworks folder?
+      - Project Generator
+      - Basic Program Structure
+      - "Painting" metaphor
+        - Drawing "accumulates"
+        - Brush color doesn't change unless you tell it to.
+      - Drawing Shapes
+        - `ofDrawRectangle(...)`
+        - `ofDrawLine(...)`
+      - Colors
+        - `ofSetColor(...)`
+      - Fill vs. Stroke
+        - `ofSetFill()` and `ofNoFill()`
+      - Interactivity
+        - `ofGetMouseX()` and `ofGetMouseY()`
+    - Common Errors
+      - What is your compiler target?
+      - Did you accidentally add a break point?
+      - How do I start over?
+        - Project Generator
+      - What about variable "scope"?
+      - Why won't my if-statement do what I want it to?
+- Creative Code Meetup!
 
-#### Week 01
+#### Session 01
+- Review Assignment 00
+  - Questions from Assignment 00?
+
 - Discussion
     - Discuss "What is Code"
     - Week 1 artists.
 
 - C++
-  - Range-for loops
-  - For loops
-  - `std::vector`
+  - Variables and Types
+    - Identifiers, reserved keywords
+    - Foundational / POD
+      - `bool`
+      - `int`
+      - `float`
+    - Other
+      - `std::string`
+      - `auto`
+  - Operators
+    - Math `+`, `-`, `*`, `/`, `%`
+    - Assignment `=`
+  - Output
+    - Standard output streams
+      - `std::cout`
+      - `std::cerr`
+    - oF output
+      - `ofLogXXX()`
+        - Finer-grained control of output.
+      - `ofSetLogLevel(...)`
+
+  - Program Flow
+    - Typically execute statements, top to bottom, left to right.
+    - Single statements vs. compound statements `{ ... }`
+    - Flow Control
+      - Selection
+        - `if` / `else if` / `else`
+        - `switch`
+      - Iteration / Repetition
+        - `for (...) { ... };`
+          - Iterate a fixed number of times.
+        - Range `for` loop
+        - `while (...) { ... };`
+          - Iterate while a condition is true.
+        - `do { ... } while (...);`
+          - Evaluate condition after contents of loop are executed.
+      - Jumping
+        - `break`
+        - `continue`
+        - `goto` (avoid)
 
 - openFrameworks
   - `ofSetColor`
   - `ofFill`
   - `ofDraw*`
 
-#### Week 02
-- Review Assignment 00
-  - Questions from Assignment 00?
+#### Session 02
 - Review Assignment 01
   - Show & Tell
   - What was hard? What was easy?
@@ -173,6 +232,20 @@ _(subject to change based on incoming skills and experience)_
   - `if` statements
   - `for` loops
   - `%` modulo operator
+
+- openFrameworks
+  - `ofSetWindowShape(...)`
+  - Coordinate System Review
+  - `ofSetBackgroundAuto(...)`
+  - `ofBackground(...)`
+  - Fading Background
+    - `ofDrawRectangle(...)`
+  - `ofRandom(...)`
+  - `ofGetMousePressed(...)`
+  - `ofGetKeyPressed(...)`
+  - `ofPushMatrix()`
+  - `ofPopMatrix()`
+
 - `ofPixels`
   - Quick review of binary numbers ...
   - How are pixels / color represented?
@@ -182,7 +255,7 @@ _(subject to change based on incoming skills and experience)_
     - Raw vs. encoded.
     - Importance of encoding for "glitch".
 
-#### Week 03
+#### Session 03
 - Simple State Machines
 - Traffic Lights
 - Review Pong Mods
@@ -234,7 +307,7 @@ _(subject to change based on incoming skills and experience)_
     - In C++ we usually use a `std::vector` to hold a collection of variables.
     - We must define the contents of the `std::vector` using a template argument like `std::vector<int>` for a collection of integers.
 
-#### Week 04
+#### Session 04
 - Semantics
     - Difference between Functions and Methods / Member Functions.
     - Difference between parameters and arguments.
@@ -251,33 +324,32 @@ _(subject to change based on incoming skills and experience)_
     - Polymorphism "having many forms"
 - Pointers, memory
 
-#### Week 05
-- Brief Intro to Xcode / IDEs
+#### Session 05
 - Pixels
 - Textures
 - Meshes
 - Mid Term Project Proposals Due + Discussion
 
-#### Week 06
+#### Session 06
 - Intro to computer vision / Machine Learning.
 - Optional IO Lab Training  
 - Mid Term Project Work
 
-#### Week 07
+#### Session 07
 - Computer Vision / Machine Learning Continued.
 - Mid Term Project Work
 
-#### Week 08
+#### Session 08
 - Mid Term Project Work
 
-#### Week 09
+#### Session 09
 - Mid Term Project Work
 
-#### Week 10
+#### Session 10
 - Mid Term Project Critiques
 
-#### Week 11
+#### Session 11
 - Final Project Work
 
-#### Week 13
+#### Session 13
 - Final Project Critiques

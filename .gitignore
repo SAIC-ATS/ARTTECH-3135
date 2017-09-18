@@ -6,6 +6,9 @@ docs/.jekyll-metadata
 
 raw/
 
+config.make
+Makefile
+
 Project.xcconfig
 *.xcodeproj
 *.plist

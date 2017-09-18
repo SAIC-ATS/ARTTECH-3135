@@ -2,6 +2,7 @@
 layout: page
 title:  Profile
 navigation: false
+published: false
 ---
 
 <!-- <img class="img-circle" src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=30&d=identicon"/> -->

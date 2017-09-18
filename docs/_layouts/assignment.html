@@ -3,8 +3,28 @@ layout: default
 ---
 
 <div class="page-header">
-  <h1>{{ page.title }} <small>Due: {{ page.due }}</h1>
+  <h1>{{ page.title }} <small>{{ page.subtitle }}</small></h1>
+
+  <h2>Assigned</h2>
+  {% assign session = site.data.sessions | where: "name", page.assigned | first %}
+  <ul>
+  {% for date in session.dates %}
+  {% assign section = forloop.index | prepend: '000' | slice: -3, 3 %}
+  <li class="section-{{ section }}">{{ section }}: {{ date | date_to_string }}</li>
+  {% endfor %}
+  </ul>
+
+  <h2>Due</h2>
+  {% assign session = site.data.sessions | where: "name", page.due | first %}
+  <ul>
+  {% for date in session.dates %}
+  {% assign section = forloop.index | prepend: '000' | slice: -3, 3 %}
+  <li class="section-{{ section }}">{{ section }}: {{ date | date_to_string }}</li>
+  {% endfor %}
+  </ul>
+
+
 </div>
 <div>
-	{{ content }}
+  {{ content }}
 </div>

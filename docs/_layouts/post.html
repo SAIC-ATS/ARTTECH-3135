@@ -2,11 +2,11 @@
 layout: default
 ---
 
-{% assign author = site.data.people[page.author] %}
+{% assign author = site.data.authors[page.author] %}
 
 <div class="page-header">
   <h1>
-  	{{ page.title }} <small>{{ page.date | date_to_string }} - {{ author.name }}
+    {{ page.title }} <small>{{ page.date | date_to_string }} - {{ author.name }}
          {% if page.tags %}
             {{ page.tags | array_to_sentence_string }}
          {% endif %}
@@ -15,5 +15,5 @@ layout: default
 </div>
 
 <div>
-	{{ content }}
+  {{ content }}
 </div>

@@ -1,23 +1,81 @@
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-          <a class="navbar-brand" href="{{ site.baseurl }}">{{ site.name }}</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <div class="container">
+            <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.name }}</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              {% for node in site.pages %}
-              {% if node.navigation != false %}
-              {% if page.url == node.url %}
-              <li class="nav-item active">
-                <a class="nav-link" href="{{ site.baseurl }}{{ node.url }}">{{ node.title }} <span class="sr-only">(current)</span></a>
-              {% else %}
-              <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
-              {% endif %}
-              </li>
-              {% endif %}
-              {% endfor %}
-            </ul>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                {% for node in site.pages %}
+                {% if node.title and node.navigation != false  %}
+                {% if page.url == node.url %}
+                <li class="nav-item active">
+                  <a class="nav-link" href="{{ site.baseurl }}{{ node.url }}">{{ node.title }} <span class="sr-only">(current)</span></a>
+                {% else %}
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
+                {% endif %}
+                </li>
+                {% endif %}
+                {% endfor %}
+
+                {% for collection in site.collections %}
+                {% if collection.name and collection.docs.size != 0 %}
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle"
+                     href=""
+                     id="navbarDropdownMenuLink"
+                     data-toggle="dropdown"
+                     aria-haspopup="true"
+                     aria-expanded="false">
+                    {{ collection.name }}
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    {% for doc in collection.docs %}
+                    <a class="dropdown-item" href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
+                    {% endfor %}
+                  </div>
+                </li>
+                {% endif %}
+                {% endfor %}
+
+                {% if site.forum %}
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ site.forum }}">Forum <i class="fa fa-lock"></i><i class="fa fa-external"></i></a>
+                </li>
+                {% endif %}
+
+                <!-- Settings button trigger modal -->
+                <!--
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#settings-modal">
+                  Settings
+                </button>
+                -->
+              </ul>
+            </div>
           </div>
         </nav>
+
+        <!-- Section Modal -->
+        <!--
+        <div class="modal fade" id="settings-modal" tabindex="-1" role="dialog" aria-labelledby="settings-modal" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="settings-modal-label">Settings</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Choose your section:
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      -->

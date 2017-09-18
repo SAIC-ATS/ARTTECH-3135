@@ -1,8 +1,62 @@
+title: Interactive Art / Creative Code
 name: Interactive Art / Creative Code
+description: The course page for ARTTECH-3135 / 5135, Interactive Art / Creative Code.
+
 baseurl: /ARTTECH-3135
 url: https://saic-ats.github.io/ARTTECH-3135
-description: ARTTECH 3135 / 5135
+
 timezone: America/Chicago
+
 plugins:
-    - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+
 highlighter: rouge
+
+permalink: pretty
+
+# jekyll-SEO
+# More: https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+google_site_verification: hO8fb6wgSNVw6C5qMR4ehv-IkEJwBbBguiWxmcwcVxQ
+
+# Custom Data
+google_analytics: UA-105746846-2
+
+# Collections
+collections:
+  assignments:
+    output: true
+    name: Assignments
+  projects:
+    output: true
+    name: Projects
+  notes:
+    output: true
+    name: Notes
+
+# Default Values
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      author: bakercp
+  - scope:
+      path: ""
+      type: assignments
+    values:
+      layout: assignment
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: note
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
+forum: https://ats.community/c/courses/arttech-3135

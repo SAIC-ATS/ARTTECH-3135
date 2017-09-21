@@ -177,6 +177,7 @@ _(subject to change based on incoming skills and experience)_
 - C++
   - Variables and Types
     - Identifiers, reserved keywords
+    - Saving information!
     - Foundational / POD
       - `bool`
       - `int`
@@ -186,16 +187,9 @@ _(subject to change based on incoming skills and experience)_
       - `auto`
   - Operators
     - Math `+`, `-`, `*`, `/`, `%`
-    - Assignment `=`
-  - Output
-    - Standard output streams
-      - `std::cout`
-      - `std::cerr`
-    - oF output
-      - `ofLogXXX()`
-        - Finer-grained control of output.
-      - `ofSetLogLevel(...)`
-
+    - Assignment `=` (tell) vs. `==` (ask)
+    - Order Operation
+    - Prioritize with Parenthesis!
   - Program Flow
     - Typically execute statements, top to bottom, left to right.
     - Single statements vs. compound statements `{ ... }`
@@ -204,17 +198,26 @@ _(subject to change based on incoming skills and experience)_
         - `if` / `else if` / `else`
         - `switch`
       - Iteration / Repetition
-        - `for (...) { ... };`
-          - Iterate a fixed number of times.
-        - Range `for` loop
         - `while (...) { ... };`
           - Iterate while a condition is true.
         - `do { ... } while (...);`
           - Evaluate condition after contents of loop are executed.
+        - `for (...) { ... };`
+          - Iterate a fixed number of times.
+        - Range `for` loop
       - Jumping
         - `break`
         - `continue`
         - `goto` (avoid)
+    - Output
+      - Standard output streams
+        - `std::cout`
+        - `std::cerr`
+      - oF output
+        - `ofLogXXX()`
+          - Finer-grained control of output.
+        - `ofSetLogLevel(...)`
+
 
 - openFrameworks
   - `ofSetColor`

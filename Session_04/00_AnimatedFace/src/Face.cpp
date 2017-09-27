@@ -10,13 +10,13 @@ void Face::setup()
 
     mouthColor = ofColor::pink;
     mouthX = 0;
-    mouthY = headHeight * 0.66;
-    mouthWidth = headWidth = 0.66;
-    mouthHeight = mouthWidth / 2;
+    mouthY = headY + headHeight * 0.33;
+    mouthWidth = headWidth * 0.66;
+    mouthHeight = mouthWidth * 0.5;
 
     noseColor = ofColor::darkBlue;
     noseX = 0;
-    noseY = headHeight / 2;
+    noseY = headY;
     noseWidth = headWidth / 6;
     noseHeight = headHeight / 6;
 
@@ -35,9 +35,6 @@ void Face::draw()
 {
     ofFill();
     ofSetColor(ofColor::red);
-    std::cout << (headX - headWidth / 2) << " " << (headY - headHeight / 2) << std::endl;
-
-    std::cout << headWidth << " " << headHeight << std::endl;
 
     ofDrawRectangle(headX - headWidth / 2,
                     headY - headHeight / 2,

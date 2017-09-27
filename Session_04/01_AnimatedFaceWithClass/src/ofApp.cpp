@@ -6,7 +6,6 @@ void ofApp::setup()
     ofBackground(255);
     myFace.setup();
 
-
     myOtherFace.setup();
     myOtherFace.headColor = ofColor::yellow;
     myOtherFace.mouthHeight = 10;
@@ -24,9 +23,6 @@ void ofApp::update()
 
 void ofApp::draw()
 {
-
-
-
     ofPushMatrix();
     ofTranslate(ofGetWidth() * 0.33, ofGetHeight() * 0.33);
     myFace.draw();
@@ -36,7 +32,6 @@ void ofApp::draw()
     ofTranslate(ofGetWidth() * 0.66, ofGetHeight() * 0.66);
     myOtherFace.draw();
     ofPopMatrix();
-
 }
 
 

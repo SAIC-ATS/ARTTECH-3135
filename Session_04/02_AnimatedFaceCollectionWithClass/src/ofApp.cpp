@@ -20,6 +20,10 @@ void ofApp::setup()
 
 void ofApp::update()
 {
+    for (std::size_t i = 0; i < myFaces.size(); i++)
+    {
+        myFaces[i].mouthWidth = ofRandom(10, 80);
+    }
 }
 
 
@@ -27,7 +31,7 @@ void ofApp::draw()
 {
     ofPushMatrix();
     ofTranslate(100, 100);
-    for (int i = 0; i < myFaces.size(); i++)
+    for (std::size_t i = 0; i < myFaces.size(); i++)
     {
         float x = i / 5;
         float y = i % 5;

@@ -14,7 +14,6 @@ public:
 
     void draw();
 
-
     // Feature Parameters
     // Feature paremeters describing the head.
     ofColor headColor;
@@ -46,6 +45,5 @@ public:
     float irisOffsetY;
     ofColor irisColor;
     float pupilRadius;
-
 
 };

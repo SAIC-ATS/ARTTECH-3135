@@ -62,8 +62,8 @@ void Face::draw()
     ofDrawEllipse(-eyeXDistance / 2, eyeY, eyeWidth * 0.5, eyeWidth * 0.5);
 
     ofSetColor(ofColor::black);
-    ofCircle(eyeXDistance / 2, eyeY, pupilRadius);
-    ofCircle(-eyeXDistance / 2, eyeY, pupilRadius);
+    ofDrawCircle(eyeXDistance / 2, eyeY, pupilRadius);
+    ofDrawCircle(-eyeXDistance / 2, eyeY, pupilRadius);
 
 }
 

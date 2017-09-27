@@ -3,6 +3,7 @@
 
 void ofApp::setup()
 {
+    ofBackground(255);
     myFace.setup();
 }
 

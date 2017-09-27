@@ -5,8 +5,8 @@ void Face::setup()
     headColor = ofColor::lightBlue;
     headX = 0;
     headY = 0;
-    headWidth = 100;
-    headHeight = 100;
+    headWidth = 200;
+    headHeight = 200;
 
     mouthColor = ofColor::pink;
     mouthX = 0;
@@ -34,11 +34,17 @@ void Face::setup()
 void Face::draw()
 {
     ofFill();
-    ofSetColor(headColor);
-    ofDrawEllipse(headX - headWidth / 2, headY - headHeight / 2, headWidth, headHeight);
-//    ofDrawEllipse(0, 0, 100, 100);
+    ofSetColor(ofColor::red);
+    std::cout << (headX - headWidth / 2) << " " << (headY - headHeight / 2) << std::endl;
 
-//
+    std::cout << headWidth << " " << headHeight << std::endl;
+
+    ofDrawRectangle(headX - headWidth / 2,
+                    headY - headHeight / 2,
+                    headWidth,
+                    headHeight);
+
+
 //    ofSetColor(mouthColor);
 //    ofDrawRectangle(mouthX - mouthWidth / 2,
 //                    mouthY - mouthHeight / 2,

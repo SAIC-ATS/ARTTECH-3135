@@ -12,7 +12,6 @@ public:
     void update() override;
     void draw() override;
 
-    Face myFace;
-    Face myOtherFace;
+    std::vector<Face> myFaces;
 
 };

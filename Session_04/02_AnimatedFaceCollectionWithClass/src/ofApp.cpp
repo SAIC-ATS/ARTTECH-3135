@@ -5,13 +5,12 @@ void ofApp::setup()
 {
     ofBackground(255);
 
-    for (int i = 0; i < 25; i++)
+    for (int i = 0; i < 16; i++)
     {
         Face theFace;
         theFace.setup();
         theFace.headColor = ofColor::fromHsb(ofRandom(255), 255, 255);
-        theFace.mouthHeight = ofRandom(10, 20);
-        theFace.mouthWidth = ofRandom(10, 80);
+        theFace.noseColor = ofColor::fromHsb(ofRandom(255), 255, 255);
 
         myFaces.push_back(theFace);
     }
@@ -22,7 +21,7 @@ void ofApp::update()
 {
     for (std::size_t i = 0; i < myFaces.size(); i++)
     {
-        myFaces[i].mouthWidth = ofRandom(10, 80);
+        myFaces[i].update();
     }
 }
 
@@ -33,8 +32,8 @@ void ofApp::draw()
     ofTranslate(100, 100);
     for (std::size_t i = 0; i < myFaces.size(); i++)
     {
-        float x = i / 5;
-        float y = i % 5;
+        float x = i / 4;
+        float y = i % 4;
 
         ofPushMatrix();
         ofTranslate(x * 200, y * 200);

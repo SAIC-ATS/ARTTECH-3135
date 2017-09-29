@@ -4,9 +4,7 @@
 void ofApp::setup()
 {
     ofBackground(255);
-    myFace.setup();
 
-    myOtherFace.setup();
     myOtherFace.headColor = ofColor::yellow;
     myOtherFace.mouthHeight = 10;
     myOtherFace.mouthWidth = 10;
@@ -16,9 +14,9 @@ void ofApp::setup()
 
 void ofApp::update()
 {
-    myOtherFace.mouthHeight = ofRandom(10, 20);
-    myOtherFace.mouthWidth = ofRandom(10, 20);
-
+    // Here we call the 
+    myFace.update();
+    myOtherFace.update();
 }
 
 void ofApp::draw()

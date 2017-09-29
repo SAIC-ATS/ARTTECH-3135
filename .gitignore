@@ -8,3 +8,8 @@ config.make
 *.app
 
 docs/_site
+
+res/
+srcJava/
+*.gradle
+AndroidManifest.xml

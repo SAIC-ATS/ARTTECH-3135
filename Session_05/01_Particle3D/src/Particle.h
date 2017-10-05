@@ -18,9 +18,8 @@ public:
     float radius = 0.0;
     ofColor color;
 
-    // 2) Challenge: Add an angle and an angleIncrement
-    // and draw rotating ... something.
-
-    
+    glm::vec3 orientation;
+    glm::vec3 angularVelocity;
+    glm::vec3 angularAcceleration;
 
 };

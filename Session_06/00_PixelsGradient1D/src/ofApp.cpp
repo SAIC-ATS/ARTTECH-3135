@@ -25,6 +25,9 @@ void ofApp::setup()
         }
     }
 
+    // Save our image.
+    ofSaveImage(pixels, "myImage.png");
+
     // Load our pixels into a texture.
     texture.loadData(pixels);
 

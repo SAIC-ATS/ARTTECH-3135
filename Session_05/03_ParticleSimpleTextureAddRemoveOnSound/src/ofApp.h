@@ -6,9 +6,7 @@
 
 
 class ofApp: public ofBaseApp
-{
-public:
-    void setup();
+w    void setup();
     void update();
     void draw();
 

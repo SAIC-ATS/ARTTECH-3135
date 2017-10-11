@@ -14,10 +14,13 @@ void ofApp::setup()
             // Create a color based on the position!
             // Red corresponds to X
             // Green corresponds to Y
-            ofColor color = ofColor(x, 0, 0);
+            ofColor color = ofColor(x, y, 0);
             pixels.setColor(x, y, color);
         }
     }
+
+    // Save our image.
+    ofSaveImage(pixels, "myImage.png");
 
     // Load our pixels into a texture to draw.
     texture.loadData(pixels);

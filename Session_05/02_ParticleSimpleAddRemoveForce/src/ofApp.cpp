@@ -30,8 +30,11 @@ void ofApp::update()
         iter->acceleration.x = 0.1;
 
         float distance = glm::distance(mouse, iter->position);
+
         glm::vec3 forceDirection = glm::normalize(mouse - iter->position) * -1;
+
         float forceStrength = ofMap(distance, 0, 200, 0.1, 0, true);
+
         iter->force = forceDirection * forceStrength;
 
         iter->update();

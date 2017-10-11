@@ -32,9 +32,9 @@ void Particle::draw()
     ofRotateYDeg(orientation.y);
     ofRotateZDeg(orientation.z);
 
-//    texture.draw(-texture.getWidth() / 2, -texture.getHeight() / 2);
+    texture.draw(-texture.getWidth() / 2, -texture.getHeight() / 2);
 
-    ofDrawAxis(40);
+//    ofDrawAxis(40);
 
     ofPopMatrix();
 }

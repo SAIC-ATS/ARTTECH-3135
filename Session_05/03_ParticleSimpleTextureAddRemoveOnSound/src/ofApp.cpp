@@ -17,7 +17,8 @@ void ofApp::setup()
 
     ofSoundStreamSettings settings;
 
-    if (!devices.empty()) {
+    if (!devices.empty())
+    {
         settings.setInDevice(devices[0]);
     }
 
@@ -46,7 +47,11 @@ void ofApp::setup()
 
 void ofApp::update()
 {
-    int numParticlesToGenerate = ofMap(smoothedVol, 0.1, 0.3, 0, 100, true);
+    int numParticlesToGenerate = ofMap(smoothedVol, 0.1, 0.3, 0, 100);
+    numParticlesToGenerate = ofClamp(numParticlesToGenerate, 0, 100);
+
+    // Or do this, all in one line.
+    // int numParticlesToGenerate = ofMap(smoothedVol, 0.1, 0.3, 0, 100, true);
 
     for (int i = 0; i < numParticlesToGenerate; i++)
     {
@@ -104,7 +109,6 @@ void ofApp::audioIn(ofSoundBuffer& input)
         curVol += left[i] * left[i];
         curVol += right [i] * right [i];
         numCounted += 2;
-
     }
 
     curVol /= (float) numCounted;

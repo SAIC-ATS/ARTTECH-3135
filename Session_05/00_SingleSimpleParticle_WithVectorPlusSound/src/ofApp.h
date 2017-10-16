@@ -11,7 +11,10 @@ public:
     void setup() override;
     void update() override;
     void draw() override;
-    
-    Particle p;
+    void mousePressed(int x, int y, int button) override;
+
+    void addParticleAtPosition(float x, float y);
+
+    std::vector<Particle> particles;
 
 };

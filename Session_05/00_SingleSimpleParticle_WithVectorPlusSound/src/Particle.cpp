@@ -9,6 +9,8 @@ void Particle::update()
     // Update the position based on the velocity.
     position += velocity;
 
+    // Update the age of the particle.
+    age++;
 }
 
 

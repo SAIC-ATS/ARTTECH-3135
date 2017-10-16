@@ -22,6 +22,9 @@ public:
     // Represent the Acceleration feature
     glm::vec3 acceleration;
 
+    // The age of our particle in number of frames.
+    uint64_t age = 0;
+
     float radius = 30;
 
 };

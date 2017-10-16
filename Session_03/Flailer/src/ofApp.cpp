@@ -57,6 +57,37 @@ void ofApp::draw()
 
     ofTranslate(x, y);
 
+    // Loop through all o fthe images.
+    for (std::size_t i = 0; i < images.size(); ++i)
+    {
+        // If we want to have different attachment points, we must push (or not
+        // push) a new transoformation matrix.
+        if (isNewSegment[i])
+        {
+            ofPushMatrix();
+        }
+
+        ofRotateZDeg(angles[i]);
+
+        images[i].draw(-images[i].getWidth() / 2,
+                       -images[i].getWidth() / 2);
+
+        // We draw the debugging here so that it is on top of our image.
+        if (showGrid)
+        {
+            drawGrid(80, 80, 10);
+            ofDrawBitmapString(ofToString("Transform: " + ofToString(i)), 14, 14);
+        }
+
+        ofTranslate(0, images[i].getHeight());
+
+        // If we pushed a new matrix, go ahead and pop it off again.
+        if (isNewSegment[i])
+        {
+            ofPopMatrix();
+        }
+    }
+
     ofPopMatrix();
 
 }

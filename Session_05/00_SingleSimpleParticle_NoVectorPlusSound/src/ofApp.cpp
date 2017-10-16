@@ -30,7 +30,7 @@ void ofApp::update()
     // Check the right wall.
     if (p.x + p.radius > ofGetWidth())
     {
-        p.vx = p.vx * -1;
+        p.vx = p.vx * -0.98;
         p.x = ofGetWidth() - p.radius;
         sound.play();
     }
@@ -38,7 +38,7 @@ void ofApp::update()
     // Check the left wall.
     if (p.x - p.radius < 0)
     {
-        p.vx = p.vx * -1;
+        p.vx = p.vx * -0.98;
         p.x = 0 + p.radius;
         sound.play();
     }
@@ -46,7 +46,7 @@ void ofApp::update()
     // Check the bottom wall.
     if (p.y + p.radius > ofGetHeight())
     {
-        p.vy = p.vy * -1;
+        p.vy = p.vy * -0.98;
         p.y = ofGetHeight() - p.radius;
         sound.play();
     }
@@ -54,7 +54,7 @@ void ofApp::update()
     // Check the top wall.
     if (p.y - p.radius < 0)
     {
-        p.vy = p.vy * -1;
+        p.vy = p.vy * -0.98;
         p.y = 0 + p.radius;
         sound.play();
     }

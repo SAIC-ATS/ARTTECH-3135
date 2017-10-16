@@ -14,6 +14,4 @@ public:
     
     Particle p;
 
-    ofSoundPlayer sound;
-
 };

@@ -35,12 +35,8 @@ void ofApp::draw()
 
             float xNose = rect.getCenter().x;
             float yNose = rect.getCenter().y;
-
             float yEye = rect.getCenter().y - 0.11 * rect.getHeight();
-
             float yMouth = rect.getCenter().y + 0.24 * rect.getHeight();
-
-
             float xEyeOffset = 0.18 * rect.getWidth();
 
             float xEyeRight = xNose + xEyeOffset;

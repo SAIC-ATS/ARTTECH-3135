@@ -69,8 +69,11 @@ void ofApp::draw()
     int halfHeight = ofGetHeight() / 2;
 
     grabber.draw(0, 0, halfWidth, halfHeight);
+    ofDrawBitmapString("grabber", 14, 14);
     grayscaleTexture.draw(halfWidth, 0, halfWidth, halfHeight);
-
+    ofDrawBitmapString("grayscaleTexture", halfWidth + 14, 14);
     backgroundTexture.draw(0, halfHeight, halfWidth, halfHeight);
+    ofDrawBitmapString("backgroundTexture", 14, halfHeight + 14);
     frameToShowTexture.draw(halfWidth, halfHeight, halfWidth, halfHeight);
+    ofDrawBitmapString("frameToShowTexture", halfWidth + 14, halfHeight + 14);
 }

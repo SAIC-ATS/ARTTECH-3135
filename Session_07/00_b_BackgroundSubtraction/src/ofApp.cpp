@@ -10,7 +10,6 @@ void ofApp::setup()
 
     grayscalePixels.allocate(grabber.getWidth(), grabber.getHeight(), OF_PIXELS_GRAY);
     backgroundPixels.allocate(grabber.getWidth(), grabber.getHeight(), OF_PIXELS_GRAY);
-
     frameToShowPixels.allocate(grabber.getWidth(), grabber.getHeight(), OF_PIXELS_RGB);
 }
 

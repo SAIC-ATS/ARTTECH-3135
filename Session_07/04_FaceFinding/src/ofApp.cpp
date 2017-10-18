@@ -28,7 +28,7 @@ void ofApp::draw()
     ofNoFill();
 	for(unsigned int i = 0; i < finder.blobs.size(); i++)
     {
-        // Ignore small v
+        // Ignore small "faces".
         if (finder.blobs[i].boundingRect.getArea() > 150 * 150)
         {
             ofRectangle rect = finder.blobs[i].boundingRect;
@@ -36,12 +36,25 @@ void ofApp::draw()
             float xNose = rect.getCenter().x;
             float yNose = rect.getCenter().y;
 
-            float yEye = rect.getCenter().y - 0.12 * rect.getHeight();
+            float yEye = rect.getCenter().y - 0.11 * rect.getHeight();
+
+            float yMouth = rect.getCenter().y + 0.24 * rect.getHeight();
+
+
+            float xEyeOffset = 0.18 * rect.getWidth();
+
+            float xEyeRight = xNose + xEyeOffset;
+            float xEyeLeft  = xNose - xEyeOffset;
+
+            ofDrawCircle(xEyeRight, yEye, 10);
+            ofDrawCircle(xEyeLeft, yEye, 10);
+
+            ofDrawCircle(xNose, yNose, 10);
+
+            ofDrawRectangle(xNose - 20, yMouth - 5, 40, 10);
 
             ofDrawRectangle(rect);
 
-            ofDrawLine(xNose, 0, xNose, ofGetHeight());
-            ofDrawLine(0, yEye, ofGetWidth(), yEye);
         }
     }
 }

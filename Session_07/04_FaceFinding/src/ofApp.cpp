@@ -35,6 +35,7 @@ void ofApp::draw()
 
             float xNose = rect.getCenter().x;
             float yNose = rect.getCenter().y;
+            
             float yEye = rect.getCenter().y - 0.11 * rect.getHeight();
             float yMouth = rect.getCenter().y + 0.24 * rect.getHeight();
             float xEyeOffset = 0.18 * rect.getWidth();
@@ -44,7 +45,7 @@ void ofApp::draw()
 
             ofDrawCircle(xEyeRight, yEye, 10);
             ofDrawCircle(xEyeLeft, yEye, 10);
-
+            
             ofDrawCircle(xNose, yNose, 10);
 
             ofDrawRectangle(xNose - 20, yMouth - 5, 40, 10);

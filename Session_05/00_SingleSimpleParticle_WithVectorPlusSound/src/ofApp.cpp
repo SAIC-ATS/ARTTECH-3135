@@ -11,6 +11,9 @@ void ofApp::setup()
 
 void ofApp::update()
 {
+    std::vector<glm::vec3> newPositions;
+
+
     // std::vector<Particle>::iterator is the same as `auto` in this case.
     auto iter = particles.begin();
 
@@ -20,12 +23,23 @@ void ofApp::update()
 
         if (iter->age > 120)
         {
+            newPositions.push_back(iter->position);
+
             // Delete the particle from the collection.
             iter = particles.erase(iter);
         }
         else
         {
             iter++;
+        }
+    }
+
+    // Now add particles.
+    for (glm::vec3& p: newPositions)
+    {
+        for (int i = 0; i < 10; i++)
+        {
+            addParticleAtPosition(p.x, p.y);
         }
     }
 }

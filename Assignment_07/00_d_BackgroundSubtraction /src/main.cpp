@@ -9,7 +9,7 @@ int main()
     ofGLWindowSettings settings;
 
     // Set the width of the initial window.
-    settings.width = 640 * 2;
+    settings.width = 640;
 
     // Set the height of the initial window.
     settings.height = 480;

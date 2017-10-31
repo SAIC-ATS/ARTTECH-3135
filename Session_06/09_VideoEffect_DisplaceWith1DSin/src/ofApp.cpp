@@ -15,15 +15,18 @@ void ofApp::update()
 
     if (grabber.isFrameNew())
     {
+        // timeScaler goes between -1 and 1 over and over again.
+        float timeScaler = sin(ofGetElapsedTimef());
+        
         for (int x = 0; x < grabber.getWidth(); x++)
         {
+            // We calculate this sin offset based ont he x position, the scale and the timeScaler.
+            
+            float sinOffset = sin(x * scale * timeScaler);
+
             for (int y = 0; y < grabber.getHeight(); y++)
             {
-                // Here we use perlin noise to figure out how to offset our pixels.
-                // This is 1-D noise.
-                float theNoise = ofNoise((x + mouseX) * scale);
-
-                int xDisplace = x + grabber.getWidth() * theNoise;
+                int xDisplace = x + grabber.getWidth() * sinOffset;
                 int yDisplace = y; // None.
 
                 // We "wrap" the values to make sure they are accessing

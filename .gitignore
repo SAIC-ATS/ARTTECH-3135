@@ -9,6 +9,8 @@ config.make
 
 docs/_site
 
+_*
+
 res/
 srcJava/
 *.gradle

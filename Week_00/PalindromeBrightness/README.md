@@ -1,1 +1,0 @@
-This program builds upon `LoopingBrightness` and demonstrates a slightly different looping logic.

@@ -1,11 +1,6 @@
 #include "ofApp.h"
 
 
-void ofApp::setup()
-{
-}
-
-
 void ofApp::update()
 {
     // Get the current time.

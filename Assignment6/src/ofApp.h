@@ -1,6 +1,11 @@
 #pragma once
 
 #include "ofMain.h"
+#include "ofxGui.h"
+#include "ofxCv.h"
+#include "ofxHTTP.h"
+#include "ofxJSON.h"
+
 
 class ofApp : public ofBaseApp{
 
@@ -11,19 +16,36 @@ class ofApp : public ofBaseApp{
         void keyPressed(int key);
         void mousePressed(int x, int y, int button);
         void makePastSquare();
-
-    ofVideoGrabber grabber;
-    ofPixels pixels;
-    ofPixels blurPixels;
-    ofPixels squarePix;
-    ofTexture texture;
-    ofTexture pastSquareTexture;
-    ofRectangle pastSquare;
-        
-//    std::pair<ofTexture, ofPixels> texturePair;
-//    std::pair<ofRectangle, std::pair<ofTexture, ofPixels>> mainPair;
+    
     std::vector<std::pair<ofRectangle, std::pair<ofTexture, ofPixels>>> pastSquareVector;
 
+    ofxPanel gui;
+    ofParameter<int> threshold;
+    ofParameter<int> erosionIterations;
+    ofParameter<int> dilationIterations;
+    
+    ofVideoGrabber grabber;
+    ofPixels squarePix;
+    
+    ofPixels grayscalePixels;
+    ofTexture grayscaleTexture;
+    
+    ofPixels backgroundPixels;
+    ofTexture backgroundTexture;
+    
+    ofPixels frameToShowPixels;
+    ofTexture frameToShowTexture;
+    
+    ofxJSONElement json;
+    
+    ofTrueTypeFont dataFont;
+
     bool go = true;
+    bool bgCaptured = false;
+    
     int makeSquareCounter = 0;
+    int halfWidth = ofGetWidth() / 2;
+    int halfHeight = ofGetHeight() / 2;
+    
+    float textSpeed;
 };

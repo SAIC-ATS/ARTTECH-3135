@@ -1,3 +1,10 @@
 ofxCv
-ofxFaceTracker2
+ofxGui
+ofxHTTP
+ofxIO
+ofxJSON
+ofxMediaType
+ofxNetworkUtils
 ofxOpenCv
+ofxPoco
+ofxSSLManager

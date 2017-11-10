@@ -3,8 +3,7 @@
 #include "ofMain.h"
 #include "ofxGui.h"
 #include "ofxCv.h"
-#include "ofxHTTP.h"
-#include "ofxJSON.h"
+#include "ofxFaceTracker2.h"
 
 
 class ofApp : public ofBaseApp{
@@ -18,25 +17,29 @@ class ofApp : public ofBaseApp{
         void makePastSquare();
     
     std::vector<std::pair<ofRectangle, std::pair<ofTexture, ofPixels>>> pastSquareVector;
-
-    ofxPanel gui;
-    ofParameter<int> threshold;
-    ofParameter<int> erosionIterations;
-    ofParameter<int> dilationIterations;
     
     ofVideoGrabber grabber;
+    
     ofPixels squarePix;
     
     ofPixels grayscalePixels;
     ofTexture grayscaleTexture;
     
-    ofPixels backgroundPixels;
-    ofTexture backgroundTexture;
+    ofPixels binaryPixels;
+    ofTexture binaryTexture;
     
     ofPixels frameToShowPixels;
     ofTexture frameToShowTexture;
     
-    ofxJSONElement json;
+    ofxFaceTracker2 tracker;
+    
+    ofxCv::ContourFinder contourFinder;
+    
+    ofxPanel gui;
+    ofParameter<bool> invert;
+    ofParameter<int> threshold;
+    ofParameter<int> erosionIterations;
+    ofParameter<int> dilationIterations;
     
     ofTrueTypeFont dataFont;
 

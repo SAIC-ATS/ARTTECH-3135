@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1AD28056FE3D0AB4C153D0F8C5C4F83A699501C2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1AD28056FE3D0AB4C153D0F8C5C4F83A699501C2" : 9223372036854775807,
+    "37526DA425E5430474A14FBFA1BC4525160B5FC1" : 9223372036854775807,
+    "3408B309914B0639E8D618139E80EF3032A46163" : 9223372036854775807,
+    "F05C4ECF53E671F843B1071F4F6DA06A319BE0DB" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D7A4A320-946C-4F9E-AAF5-E8237D385EE1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1AD28056FE3D0AB4C153D0F8C5C4F83A699501C2" : "ARTTECH-3135\/",
+    "37526DA425E5430474A14FBFA1BC4525160B5FC1" : "..\/Downloads\/of_v20170218_osx_release\/addons\/ofxCv",
+    "3408B309914B0639E8D618139E80EF3032A46163" : "..\/Downloads\/of_v20170218_osx_release\/addons\/ofxFaceTracker2",
+    "F05C4ECF53E671F843B1071F4F6DA06A319BE0DB" : "..\/Downloads\/of_v20170218_osx_release\/addons\/ofxPython"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FinalProject",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FinalProject\/FinalProject.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/georgest32\/ARTTECH-3135.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1AD28056FE3D0AB4C153D0F8C5C4F83A699501C2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/HalfdanJ\/ofxFaceTracker2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3408B309914B0639E8D618139E80EF3032A46163"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kylemcdonald\/ofxCv.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "37526DA425E5430474A14FBFA1BC4525160B5FC1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/chaosct\/ofxPython.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F05C4ECF53E671F843B1071F4F6DA06A319BE0DB"
+    }
+  ]
+}

@@ -7,14 +7,14 @@
 
 
 class ofApp : public ofBaseApp{
-
-	public:
-		void setup();
-		void update();
-		void draw();
-        void keyPressed(int key);
-        void mousePressed(int x, int y, int button);
-        void makePastSquare();
+    
+public:
+    void setup();
+    void update();
+    void draw();
+    void keyPressed(int key);
+    void mousePressed(int x, int y, int button);
+    void makePastSquare();
     
     std::vector<std::pair<ofRectangle, std::pair<ofTexture, ofPixels>>> pastSquareVector;
     
@@ -42,7 +42,7 @@ class ofApp : public ofBaseApp{
     ofParameter<int> dilationIterations;
     
     ofTrueTypeFont dataFont;
-
+    
     bool go = true;
     bool bgCaptured = false;
     

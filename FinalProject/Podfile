@@ -3,6 +3,6 @@ use_frameworks!
 
 platform :osx, '10.12.6'
 
-target ‘FinalProject’ do
+target 'FinalProject' do
     pod 'AffdexSDK-OSX'
 end

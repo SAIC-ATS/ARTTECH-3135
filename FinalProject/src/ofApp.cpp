@@ -66,8 +66,13 @@ void ofApp::draw()
     frameToShowTexture.draw(320, 480, grabber.getWidth()/2, grabber.getHeight()/2);
     binaryTexture.draw(0, 480, grabber.getWidth()/2, grabber.getHeight()/2);
     
+//    auto it = pastSquareVector.begin() - 1;
+//    
+//    for(auto pastSquare : pastSquareVector)
     for(auto it = pastSquareVector.begin(); it < pastSquareVector.end(); ++it)
     {
+//        ++it;
+
         if(pastSquareMax + it->pastSquareIndex < pastSquareCount)
         {
             pastSquareVector.erase(it);

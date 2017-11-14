@@ -49,7 +49,7 @@ public:
     int halfWidth = ofGetWidth() / 2;
     int halfHeight = ofGetHeight() / 2;
     int pastSquareCount = 0;
-    int pastSquareMax = 25;
+    int pastSquareMax = 10;
     
     float textSpeed;
 };

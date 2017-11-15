@@ -1,10 +1,12 @@
 #include "ofApp.h"
 
+//use this for poetic systems fp? emotion determines selections of fragments of poetry?
+
 void ofApp::setup()
 {
     receiver.setup(PORT);
-    dataFont.load("consolas.ttf", 18, true, true, true);
-    
+    dataFont.load("consolas.ttf", 12, true, true, true);
+        
     grabber.setup(640, 480);
     tracker.setup();
     
@@ -23,6 +25,7 @@ void ofApp::setup()
     gui.add(dilationIterations.set("Dilation Iterations", 0, 0, 30));
     gui.add(invert.set("Invert", true));
     gui.add(pastSquareMax.set("Max num PastSquares", 25, 0, 50));
+    gui.add(pastSquareSpawnRate.set("PastSquare spawn rate", 20, 0, 100));
 
     
     ofNoFill();
@@ -38,15 +41,6 @@ void ofApp::update()
     makeSquareCounter++;
     grabber.update();
     
-    if(go && makeSquareCounter>20)
-    {
-        PastSquare newSquare = PastSquare(grabber, frameToShowPixels, pastSquareCount, bgCaptured);
-        pastSquareVector.push_back(newSquare);
-        
-        pastSquareCount++;
-        makeSquareCounter = 0;
-    }
-    
     if (grabber.isFrameNew())
     {
         tracker.update(grabber);
@@ -56,12 +50,26 @@ void ofApp::update()
         ofxCv::erode(binaryPixels, binaryPixels, erosionIterations);
         ofxCv::dilate(binaryPixels, binaryPixels, dilationIterations);
         
+        //BG Subtraction
         captureBG();
         
         contourFinder.findContours(binaryPixels);
         grayscaleTexture.loadData(grayscalePixels);
         binaryTexture.loadData(binaryPixels);
         backgroundTexture.loadData(backgroundPixels);
+    }
+    
+    if(go && makeSquareCounter>pastSquareSpawnRate && tracker.getInstances().size() > 0)
+    {
+        PastSquare newSquare = PastSquare(grabber, frameToShowPixels, pastSquareCount, bgCaptured, tracker);
+        pastSquareVector.push_back(newSquare);
+        
+        dataText = testText[(int)ofRandom(0,testText.size()+1)];
+        std::pair<string, ofRectangle> dataPair = std::make_pair(dataText, ofRectangle(newSquare.pastSquare.getMinX(), newSquare.pastSquare.getMinY()+50, newSquare.pastSquare.width, newSquare.pastSquare.height));
+        textVector.push_back(dataPair);
+        
+        pastSquareCount++;
+        makeSquareCounter = 0;
     }
 }
 
@@ -72,7 +80,11 @@ void ofApp::draw()
     backgroundTexture.draw(320, 480, grabber.getWidth()/2, grabber.getHeight()/2);
     binaryTexture.draw(0, 480, grabber.getWidth()/2, grabber.getHeight()/2);
     
+    drawText();
     drawPastSquares();
+    
+    tracker.drawDebug();
+    tracker.drawDebugPose();
 }
 
 void ofApp::keyPressed(int key)
@@ -158,8 +170,8 @@ void ofApp::drawPastSquares(){
     }
 }
 
-void ofApp::captureBG(){
-    
+void ofApp::captureBG()
+{
 // Make the grayscale image from the fresh camera image.
     for (int x = 0; x < grabber.getWidth(); x++)
     {
@@ -197,5 +209,15 @@ void ofApp::captureBG(){
             frameToShowPixels.setColor(x, y, color);
         }
     }
+}
+
+void ofApp::drawText(){
+    ofPushStyle();
+    ofSetColor(0);
+    for(auto it = textVector.begin(); it < textVector.end(); ++it)
+    {
+        dataFont.drawString(it->first, it->second.getMinX(), it->second.getMinY());
+    }
+    ofPopStyle();
 }
 

@@ -1,11 +1,12 @@
 #pragma once
 
 #include "ofMain.h"
+#include "ofxFaceTracker2.h"
 
 class PastSquare
 {
 public:
-    PastSquare(ofVideoGrabber grabber, ofPixels frameToShowPixels, int pastSquareIndex, bool bgCaptured);
+    PastSquare(ofVideoGrabber grabber, ofPixels frameToShowPixels, int pastSquareIndex, bool bgCaptured, ofxFaceTracker2 &tracker);
     ~PastSquare();
     
     void setup();
@@ -25,5 +26,4 @@ public:
     int dirCounter = 0;
     int goingLeft = 0;
     int goingRight = 1;
-
 };

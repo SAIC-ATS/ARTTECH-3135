@@ -25,6 +25,7 @@ public:
     void handleOscMsgs();
     void drawPastSquares();
     void captureBG();
+    void drawText();
     
     ofVideoGrabber grabber;
     
@@ -51,19 +52,24 @@ public:
     ofParameter<int> erosionIterations;
     ofParameter<int> dilationIterations;
     ofParameter<int> pastSquareMax;
+    ofParameter<int> pastSquareSpawnRate;
 
     ofTrueTypeFont dataFont;
     
     std::vector<PastSquare> pastSquareVector;
-    
+    std::vector<std::pair<string, ofRectangle>> textVector;
+
     bool go = true;
     bool bgCaptured = false;
+    float timers[NUM_MSG_STRINGS];
     int current_msg_string;
     int makeSquareCounter = 0;
     int halfWidth = ofGetWidth() / 2;
     int halfHeight = ofGetHeight() / 2;
     int pastSquareCount = 0;
-    string msg_strings[NUM_MSG_STRINGS];
-    float timers[NUM_MSG_STRINGS];
+    std::string msg_strings[NUM_MSG_STRINGS];
+    
+    std::string dataText;
+    std::array<string, 5> testText = {"here is some text\n", "and here's a little more text\n", "hey look it's text\n", "this is a string of text\n", "a text string is I\n"};
 };
 

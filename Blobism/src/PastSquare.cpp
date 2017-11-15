@@ -1,17 +1,21 @@
 #include "PastSquare.h"
 
-PastSquare::PastSquare(ofVideoGrabber grabber, ofPixels frameToShowPixels, int pastSquareIndex, bool bgCaptured)
+PastSquare::PastSquare(ofVideoGrabber grabber, ofPixels frameToShowPixels, int pastSquareIndex, bool bgCaptured, ofxFaceTracker2 &tracker)
 {
     squarePix.set(255);
-    
     squarePix.allocate(grabber.getWidth(), grabber.getHeight(), OF_PIXELS_RGBA);
 
-    //Assign random values for dimensions of pastSquare
-    int dimX = ofRandom(20, 200);
-    int dimY = ofRandom(20, 200);
+    ofxFaceTracker2Instance trackerInstance = tracker.getInstances()[0];
+
+    //Assign random values inside bounding box of FaceTracker for dimensions and location of new pastSquare
+    int centerX = ofRandom(trackerInstance.getBoundingBox().getMinX(), trackerInstance.getBoundingBox().getMaxX());
+    int centerY = ofRandom(trackerInstance.getBoundingBox().getMinY(), trackerInstance.getBoundingBox().getMaxY());
+    
+    int dimX = ofRandom(trackerInstance.getBoundingBox().width/10, trackerInstance.getBoundingBox().width/2);
+    int dimY = ofRandom(trackerInstance.getBoundingBox().height/10, trackerInstance.getBoundingBox().height/2);
     
     //Create new ofRectangle pastSquare
-    this->pastSquare = ofRectangle((int)ofRandom(640-dimX), (int)ofRandom(480-dimY), dimX, dimY);
+    this->pastSquare = ofRectangle(centerX, centerY, dimX, dimY);
     
     //Set squarePix to current grabber pixels
     squarePix = grabber.getPixels();
@@ -93,7 +97,7 @@ void PastSquare::blur(bool go, ofVideoGrabber grabber)
                 }
                 else
                 {
-                    this->squarePix.setColor(x, y, this->squarePixMirrored.getColor(x+dirCounter, y));
+                    this->squarePix.setColor(x, y, this->squarePixMirrored.getColor(x+this->dirCounter, y));
                 }
             }
         }

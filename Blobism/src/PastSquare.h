@@ -21,8 +21,6 @@ public:
     ofTexture pastSquareTexture;
     
     int pastSquareIndex;
-    
-    int direction;
     int dirCounter = 0;
     int goingLeft = 0;
     int goingRight = 1;

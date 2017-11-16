@@ -46,13 +46,16 @@ PastSquare::PastSquare(ofVideoGrabber grabber, ofPixels frameToShowPixels, int p
     //Assign the pixels to texture
     this->pastSquareTexture.loadData(squarePix);
     
-    this->direction = (int)ofRandom(0,2);
-    
-    cout << direction << std::endl;
-    
     this->squarePixMirrored = squarePix;
-    this->squarePixMirrored.mirror(false, true);
-    
+
+//Randomize start image reflection
+    if((int)ofRandom(0,2)>0) {
+        this->squarePixMirrored.mirror(false, true);
+    }
+    else {
+        this->squarePix.mirror(false, true);
+    }
+
     this->pastSquareIndex = pastSquareIndex;
 }
 
@@ -98,6 +101,36 @@ void PastSquare::blur(bool go, ofVideoGrabber grabber)
                 else
                 {
                     this->squarePix.setColor(x, y, this->squarePixMirrored.getColor(x+this->dirCounter, y));
+                }
+                
+                //fade
+                if(dirCounter % 2 == 0)
+                {
+                    this->squarePix.setColor(x, y, ofColor(squarePix.getColor(x, y).r+1,
+                                                           squarePix.getColor(x, y).g+1,
+                                                           squarePix.getColor(x, y).b+1,
+                                                           squarePix.getColor(x, y).a
+                                                           ));
+                    
+                    this->squarePixMirrored.setColor(x, y, ofColor(squarePixMirrored.getColor(x, y).r+1,
+                                                                   squarePixMirrored.getColor(x, y).g+1,
+                                                                   squarePixMirrored.getColor(x, y).b+1,
+                                                                   squarePixMirrored.getColor(x, y).a
+                                                                   ));
+                    if(dirCounter % 10 == 0)
+                    {
+                        this->squarePix.setColor(x, y, ofColor(squarePix.getColor(x, y).r,
+                                                               squarePix.getColor(x, y).g,
+                                                               squarePix.getColor(x, y).b,
+                                                               squarePix.getColor(x, y).a-1
+                                                               ));
+                        
+                        this->squarePixMirrored.setColor(x, y, ofColor(squarePixMirrored.getColor(x, y).r,
+                                                                       squarePixMirrored.getColor(x, y).g,
+                                                                       squarePixMirrored.getColor(x, y).b,
+                                                                       squarePixMirrored.getColor(x, y).a-1
+                                                                       ));
+                    }
                 }
             }
         }

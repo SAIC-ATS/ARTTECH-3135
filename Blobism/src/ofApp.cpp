@@ -11,13 +11,6 @@ using namespace ofxCv;
 //Google: features and logo identification
 //Watson: not sure what exactly is unique about it but seems
 
-//make sure osc is being sent from affdex
-//make sure osc is sent/recieved from desktop obj-c app
-//network monitoring to see if packets are being sent from affdex
-//send a shitton and see if they spike
-//look at permissions in affdex: maybe something is disabling network communication?
-//first thing: use xcode obj-c template to test osc library
-
 void ofApp::setup()
 {
     ofSetVerticalSync(true);

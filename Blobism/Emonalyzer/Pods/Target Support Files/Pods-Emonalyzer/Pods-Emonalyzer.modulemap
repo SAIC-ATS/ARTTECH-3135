@@ -1,0 +1,6 @@
+framework module Pods_Emonalyzer {
+  umbrella header "Pods-Emonalyzer-umbrella.h"
+
+  export *
+  module * { export * }
+}

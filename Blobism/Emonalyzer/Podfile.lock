@@ -1,0 +1,15 @@
+PODS:
+  - AffdexSDK-OSX (3.2.0)
+  - SocketRocket (0.5.1)
+
+DEPENDENCIES:
+  - AffdexSDK-OSX
+  - SocketRocket
+
+SPEC CHECKSUMS:
+  AffdexSDK-OSX: a8271ced7d3aa2026f90cc7e82f73277991f06b7
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+
+PODFILE CHECKSUM: 1adcec3251a618662ab5879f249cad1b20cc291f
+
+COCOAPODS: 1.4.0.beta.2

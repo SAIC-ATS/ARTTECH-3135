@@ -3,7 +3,7 @@ use_frameworks!
 
 platform :osx, '10.12'
 
-target 'Blobism' do
-    pod 'AffdexSDK-OSX'
-
+target 'Emonalyzer' do
+    pod 'AffdexSDK-OSX', '~> 3.2'
+    pod 'SocketRocket'
 end

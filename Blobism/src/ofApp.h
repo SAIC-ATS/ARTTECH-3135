@@ -8,6 +8,7 @@
 #include "ofxOsc.h"
 #include "ofxKinectV2.h"
 //#include "ofxPython.h"
+#include "ViewController.h"
 
 #define HOST "127.0.0.1"
 #define PORT 12001

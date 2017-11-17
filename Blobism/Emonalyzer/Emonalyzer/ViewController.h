@@ -9,6 +9,9 @@
 #import <Cocoa/Cocoa.h>
 #import <Affdex/Affdex.h>
 
+#define SENDHOST @"127.0.0.1"
+#define SENDPORT 12001
+
 @interface ViewController : NSViewController <AFDXDetectorDelegate>
 
 @property (strong) AFDXDetector *detector;

@@ -44,8 +44,8 @@
     {
         NSArray *a = [faces allValues];
         if(a.count > 0){
-//            AFDXFace *face = [a objectAtIndex:0];
-//
+            AFDXFace *face = [a objectAtIndex:0];
+
 //            NSNumber * joy = [NSNumber numberWithFloat:face.emotions.joy];
 //            NSNumber * anger = [NSNumber numberWithFloat:face.emotions.anger];
 //            NSNumber * surprise = [NSNumber numberWithFloat:face.emotions.surprise];

@@ -7,8 +7,8 @@
 #include "PastSquare.h"
 #include "ofxOsc.h"
 #include "ofxKinectV2.h"
+#include "ofxJSON.h"
 //#include "ofxPython.h"
-#include "ViewController.h"
 
 #define HOST "127.0.0.1"
 #define PORT 12001
@@ -76,6 +76,9 @@ public:
     ofParameter<int> erosionIterations, dilationIterations, pastSquareMax, pastSquareSpawnInterval;
 
     ofTrueTypeFont dataFont;
+    
+    ofxJSONElement faceJSON;
+    ofxJSONElement facePoints;
     
     std::vector<PastSquare> pastSquareVector;
     std::vector<std::pair<string, ofRectangle>> textVector;

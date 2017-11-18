@@ -6,7 +6,7 @@ endif
 
 # make sure the the OF_ROOT location is defined
 ifndef OF_ROOT
-	OF_ROOT=$(realpath ../../../Downloads/of_v20170218_osx_release/Downloads/of_v20170218_osx_release/Downloads/of_v20170218_osx_release/Downloads/of_v20170218_osx_release/Downloads/of_v20170218_osx_release/Downloads/of_v20170218_osx_release/Downloads/of_v20170218_osx_release)
+	OF_ROOT=$(realpath ../../../Downloads/of_v20170218_osx_release/Downloads/of_v20170218_osx_release/Downloads/of_v20170218_osx_release/Downloads/of_v20170218_osx_release/Downloads/of_v20170218_osx_release/Downloads/of_v20170218_osx_release/Downloads/of_v20170218_osx_release/Downloads/of_v20170218_osx_release/Downloads/of_v20170218_osx_release/Downloads/of_v20170218_osx_release/Downloads/of_v20170218_osx_release/Downloads/of_v20170218_osx_release)
 endif
 
 # call the project makefile!

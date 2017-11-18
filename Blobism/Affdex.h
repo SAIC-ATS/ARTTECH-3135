@@ -24,26 +24,26 @@
 /**
  \mainpage
  Welcome to the Affdex SDK for iOS and macOS! With this SDK, your iOS and macOS apps will be able to detect faces and their facial expressions using the built-in camera, or via a file on your iOS device or Mac.
- 
+
  <b>Hardware Requirements</b>
  <br>
  <ul>
  <li>iOS: Any iPad, iPhone, or iPod Touch running iOS 8 or newer.</li>
  <li>macOS: A Mac running macOS 10.11 El Capitan or newer.</li>
  </ul>
- 
+
  <b>Development Requirements</b>
  <br>
  <ul>
  <li> Xcode 8.2.1 or higher</li>
  </ul>
- 
+
  <b>Getting Started</b>
  <br>
  To get started, visit https://github.com/Affectiva and pull down the source for one of our demo apps. Ensure that the Code Signing settings for the various projects are configured correctly. For iOS, the identity is configured for "iPhone Developer" which should match your identity automatically.
  ￼
  If you have any questions, comments or suggestions, please email them to sdk@affectiva.com.
- 
+
  Enjoy the SDK!
  */
 
@@ -851,7 +851,7 @@ typedef enum {
 /**
  \brief
  This class utilizes Affdex's facial expression detection capabilities by analyzing video frames and returning information about the faces in each frame.
- 
+
  The AFDXDetector class analyzes successive video frames in order to measure the number and degree of facial expressions of the subjects.
  Depending upon the initialization method used, the video frames may come from either the built-in camera of the device, via a file on
  the device, or pushed to the engine through a method.
@@ -1204,18 +1204,18 @@ typedef enum
 /**
  \brief
  Initializes the ADFXDetector for processing video from a capture device using LARGE_FACES mode.
- 
+
  This method initializes the Affdex facial expression engine and prepares it to receive video frames from any attached capture device. The caller specifices the AVCaptureDevice that will be used to capture the frames.
- 
+
  Note that the object "owns" the camera device and will not relinquish it until the object is deallocated.
- 
+
  \param
  delegate     The object which will receive emotion messages.
  \param
  device       The AVCaptureDevice object that will be used.
  \param
  maximumFaces The maximum number of faces that will be detected by the detector.
- 
+
  @result
  The newly created object.
  */
@@ -1281,19 +1281,19 @@ typedef enum
 /**
  \brief
  Initializes the ADFXDetector for processing video from a camera.
- 
+
  This method initializes the Affdex facial expression engine and prepares it to receive video frames from the camera
  on the device. The caller specifices which camera (front or back) will be used to capture the frames.
- 
+
  Note that the object "owns" the camera device and will not relinquish it until the object is deallocated.
- 
+
  \param
  delegate     The object which will receive emotion messages.
  \param
  camera       An enumerated value indicating which camera (AFDX_CAMERA_FRONT or AFDX_CAMERA_BACK)
  \param
  maximumFaces The maximum number of faces that will be detected by the detector.
- 
+
  @result
  The newly created object.
  */
@@ -1304,12 +1304,12 @@ typedef enum
 /**
  \brief
  Initializes the ADFXDetector for processing video from a camera.
- 
+
  This method initializes the Affdex facial expression engine and prepares it to receive video frames from the camera
  on the device. The caller specifices which camera (front or back) will be used to capture the frames.
- 
+
  Note that the object "owns" the camera device and will not relinquish it until the object is deallocated.
- 
+
  \param
  delegate     The object which will receive emotion messages.
  \param
@@ -1318,7 +1318,7 @@ typedef enum
  maximumFaces The maximum number of faces that will be detected by the detector.
  \param
  faceMode     The face detection mode (LARGE_FACES or SMALL_FACES)
- 
+
  @result
  The newly created object.
  */
@@ -1330,17 +1330,17 @@ typedef enum
 /**
  \brief
  Initializes the ADFXDetector for processing video from a file.
- 
+
  This method initializes the Affdex facial expression engine and prepares it to receive video frames from a file
  on the device. The caller specifices the name of the movie file that contains the video to be processed.
- 
+
  \param
  delegate     The object which will receive emotion messages.
  \param
  path         The path to the file containing the video.
  \param
  maximumFaces The maximum number of faces that will be detected by the detector.
- 
+
  \result
  The newly created object.
  */
@@ -1351,10 +1351,10 @@ typedef enum
 /**
  \brief
  Initializes the ADFXDetector for processing video from a file.
- 
+
  This method initializes the Affdex facial expression engine and prepares it to receive video frames from a file
  on the device. The caller specifices the name of the movie file that contains the video to be processed.
- 
+
  \param
  delegate     The object which will receive emotion messages.
  \param
@@ -1375,16 +1375,16 @@ typedef enum
 /**
  \brief
  Initializes the ADFXDetector for processing video frames pushed by the caller.
- 
+
  This method initializes the Affdex facial expression engine and prepares it to receive video frames pushed from the caller.
- 
+
  \param
  delegate     The object which will receive emotion messages.
  \param
  discrete     If TRUE, then images passed to processImage: are expected to be unrelated.
  \param
  maximumFaces The maximum number of faces that will be detected by the detector.
- 
+
  \result
  The newly created object.
  */
@@ -1395,9 +1395,9 @@ typedef enum
 /**
  \brief
  Initializes the ADFXDetector for processing video frames pushed by the caller.
- 
+
  This method initializes the Affdex facial expression engine and prepares it to receive video frames pushed from the caller.
- 
+
  \param
  delegate     The object which will receive emotion messages.
  \param
@@ -1406,7 +1406,7 @@ typedef enum
  maximumFaces The maximum number of faces that will be detected by the detector.
  \param
  faceMode     The face detection mode (LARGE_FACES or SMALL_FACES)
- 
+
  \result
  The newly created object.
  */
@@ -1418,7 +1418,7 @@ typedef enum
 /**
  \brief
  Starts the AFDXDetector's detection process.
- 
+
  When an AFDXDetector receives this message, it will begin processing frames from the built-in camera or file (assuming the related initialization methods were used), looking for faces.
 
  \result
@@ -1429,9 +1429,9 @@ typedef enum
 /**
  \brief
  Stops the AFDXDetector's detection process.
- 
+
  When an AFDXDetector receives this message, it will stop processing frames.
- 
+
  \result
  If nil, no error; otherwise an NSError object.
  */
@@ -1452,11 +1452,11 @@ typedef enum
 /**
  \brief
  Asks the AFDXDetector to process the passed image as a discrete image.
- 
+
  This method is used when the initWithDelegate:discreteImages:maximumFaces: method is used to create the AFDXDetector.
  Callers may pass frames to this method at any rate that is suitable for them.
  The detector expects subsequent frames to be unrelated to previous frames (e.g. a series of still photos).
- 
+
  \param
  facePicture A reference to an image object to process.
  */
@@ -1469,11 +1469,11 @@ typedef enum
 /**
  \brief
  Asks the AFDXDetector to process the passed UIImage (iOS) or NSImage (OS X).
- 
+
  This method is used when the initWithDelegate:discreteImages:maximumFaces: method is used to create the AFDXDetector.
  Callers may pass frames to this method at any rate that is suitable for them.
  The detector expects subsequent frames to be related to previous frames (e.g. a video stream).
- 
+
  \param
  facePicture A reference to a image object to process.
  \param
@@ -1488,14 +1488,14 @@ typedef enum
 /**
  \brief
  Rotate a UIImage (iOS) or NSImage (OS X) by the specified number of degrees.
- 
+
  This method is useful for rotating image objects.
- 
+
  \param
  src          The source image to rotate.
  \param
  angleDegrees The angle (in degrees) to rotate the image.
- 
+
  \result
  The rotated image is returned.
  */
@@ -1508,9 +1508,9 @@ typedef enum
 /**
  \brief
  A convenience method for drawing points and rectangles on an image
- 
+
  This method can be used to draw points and rectangles associated with faces on an image, as well as additional images.
- 
+
  \param
  points An array of CGPoints to draw
  \param
@@ -1527,7 +1527,7 @@ typedef enum
  imageRects An array of image frames for the passed images
  \param
  image The image to draw on.
- 
+
  \result
  A new image that contains the drawn elements
  */
@@ -1555,9 +1555,9 @@ typedef enum
 /**
  \brief
  A convenience method for drawing points and rectangles on an image
- 
+
  This method can be used to draw points and rectangles associated with faces on an image.
- 
+
  \param
  points An array of CGPoints to draw
  \param
@@ -1570,7 +1570,7 @@ typedef enum
  rectangleColor The color to use when drawing rectangles
  \param
  image The image to draw on.
- 
+
  \result
  A new image that contains the drawn elements
  */
@@ -1593,7 +1593,7 @@ typedef enum
 
 /**
  \protocol        AFDXDetectorDelegate
- 
+
  \brief
  This protocol provides methods that the AFDXDetector uses to communicate to users of the class.
  */
@@ -1602,10 +1602,10 @@ typedef enum
 /**
  \brief
  Indicates that the face detector has processed the video.
- 
+
  When the face tracker completes processing of the last frame, this method is called.
  (Applies only to processing of video files).
- 
+
  \param
  detector    A pointer to the AFDXDetector object.
  */
@@ -1615,10 +1615,10 @@ typedef enum
 /**
  \brief
  Indicates that the face detector has started tracking a face.
- 
+
  When the face tracker detects a face, this method is called. The receiver should expect that tracking continues until
  a call to detectorDidStop: occurs.
- 
+
  \param
  detector    A pointer to the AFDXDetector object.
  \param
@@ -1630,10 +1630,10 @@ typedef enum
 /**
  \brief
  Indicates that the face detector has stopped tracking a face.
- 
+
  When the face tracker no longer detects a face, this method is called. The receiver should expect that there is no
  face tracking until a call to detectorDidStart: occurs.
- 
+
  \param
  detector    A pointer to the AFDXDetector object.
  \param
@@ -1645,19 +1645,19 @@ typedef enum
 /**
  \brief
  Called for all frames captured. Contains information for facial expressions detected for a particular time.
- 
+
  When an facial expression has been detected at a specific point in the video stream, this method will be called with an
  array of AFDXMetric objects. The number of objects passed equals to the number of facial expressions requested when
  the detector was initialized.
- 
+
  A reference to the actual image that was analyzed is passed as well. This can be useful for displaying in a view
  or doing other relevant processing.
- 
+
  The time into the stream that the facial expression occurred is also available.  This is a relative time composed indicating
  the number of seconds into the processing stream that the frame occurred.
- 
+
  This method will also be called if captured frame did not result in the detection of any facial expressions. This may happen for when no face is detected. In this case the array of AFDXMetric objects will be nil.
- 
+
  \param
  detector    A pointer to the AFDXDetector object.
  \param
@@ -1675,3 +1675,5 @@ typedef enum
 #endif
 
 @end
+
+

@@ -11,6 +11,8 @@ using namespace ofxCv;
 //Google: features and logo identification
 //Watson: not sure what exactly is unique about it but seems
 
+//Text size of emotions/expressions bigger as metric increases?
+
 void ofApp::setup()
 {
     ofSetVerticalSync(true);
@@ -141,14 +143,13 @@ void ofApp::mousePressed(int x, int y, int button)
 void ofApp::handleOscMsgs()
 {
     // hide old messages
-//    for(int i = 0; i < NUM_MSG_STRINGS; i++){
-//        if(timers[i] < ofGetElapsedTimef()){
-//            msg_strings[i] = "";
-//        }
-//    }
+    for(int i = 0; i < NUM_MSG_STRINGS; i++){
+        if(timers[i] < ofGetElapsedTimef()){
+            msg_strings[i] = "";
+        }
+    }
     // check for waiting messages
     while(receiver.hasWaitingMessages()){
-        cout<<"u got mail!"<<std::endl;
         // get the next message
         ofxOscMessage m;
         receiver.getNextMessage(m);
@@ -161,19 +162,29 @@ void ofApp::handleOscMsgs()
             msg_string += m.getArgTypeName(i);
             msg_string += ":";
             // display the argument - make sure we get the right type
-            if(m.getArgType(i) == OFXOSC_TYPE_INT32){
-                msg_string += ofToString(m.getArgAsInt32(i));
+//            if(m.getArgType(i) == OFXOSC_TYPE_INT32){
+//            }
+//            else if(m.getArgType(i) == OFXOSC_TYPE_FLOAT){
+//            }
+//            else if(m.getArgType(i) == OFXOSC_TYPE_STRING){
+//            }
+//            else{
+//            }
+            
+            if(m.getAddress() == "/Emonalyzer/emotions"){
+                size_t bug = m.getArgAsString(0).find("\",\n}");
+                string jString = m.getArgAsString(0).replace(bug, std::string("\",\n}").length(), "\"\n}");
+                faceJSON.parse("{" + jString + "}");
+                cout<<faceJSON<<endl;
             }
-            else if(m.getArgType(i) == OFXOSC_TYPE_FLOAT){
-                msg_string += ofToString(m.getArgAsFloat(i));
-            }
-            else if(m.getArgType(i) == OFXOSC_TYPE_STRING){
-                msg_string += m.getArgAsString(i);
-                cout << msg_string << std::endl;
-            }
-            else{
-                msg_string += "unknown";
-            }
+            
+//            if(m.getAddress() == "/Emonalyzer/facePoints"){
+                facePoints.parse("{" + m.getArgAsString(0) + "}");
+                cout<<facePoints<<endl;
+//            }
+
+//            for(int i = 0; i < m.getArgAsString(1).size(); i++){
+//            }
         }
         // add to the list of strings to display
         msg_strings[current_msg_string] = msg_string;

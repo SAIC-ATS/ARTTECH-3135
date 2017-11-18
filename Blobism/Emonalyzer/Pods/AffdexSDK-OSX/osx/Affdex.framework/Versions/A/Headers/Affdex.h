@@ -20,7 +20,6 @@
 #define ALLOW_DEPRECATED 1
 
 @protocol AFDXDetectorDelegate;
-
 /**
  \mainpage
  Welcome to the Affdex SDK for iOS and macOS! With this SDK, your iOS and macOS apps will be able to detect faces and their facial expressions using the built-in camera, or via a file on your iOS device or Mac.

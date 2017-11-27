@@ -33,6 +33,12 @@ void ofApp::update()
 
     // This is the difference between 100 and our current sum.
     int diff = 100 - sum;
+    
+    int diffdiff = lastDiff - diff;
+    // do something with diffdiff is a good control parameter about how much people are moving the slider.
+    
+    lastDiff = diff;
+    
     // If diff < 0, that means we need to subtract some values from our sliders.
     // If diff > 0, that means we need to add some values to our sliders.
     

@@ -16,5 +16,6 @@ public:
     ofxPanel gui;
     
     std::vector<ofxIntSlider> sliders;
-        
+    
+    int lastDiff = 0;
 };

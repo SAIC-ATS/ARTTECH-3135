@@ -12,7 +12,7 @@ void ofApp::setup()
     anglesNoiseIncrement = { 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01  };
     anglesNoiseOffsets = { ofRandom(100), ofRandom(100), ofRandom(100), ofRandom(100), ofRandom(100), ofRandom(100), ofRandom(100), ofRandom(100) };
     anglesNoiseScales = { 2, 2, 2, 2, 2, 2, 2, 2 };
-    isNewSegment = { false, false, false, false, false, false, false, false };
+    isNewSegment = { false, false, true, false, false, false, true, true };
 }
 
 

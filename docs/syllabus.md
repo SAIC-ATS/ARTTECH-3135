@@ -1,43 +1,44 @@
 ---
 layout: page
 title:  Syllabus
-
 ---
 
 ## Interactive Art / Creative Code, ARTTECH 3135 / 5135
 
 Semester, Year
-:   Fall, 2017
+:   Fall, 2019
 
 Meeting Times
-:   (-001) Wednesdays 9am-4pm, (-002) Mondays 9am-4pm
+:   (-001) Fridays 9am-4pm
 
 Meeting Location
 :   MacLean 401
 
 Instructor
-:   [Christopher Baker](https://christopherbaker.net)
+:   [Christopher Baker](https://new.christopherbaker.net)
 
 Teaching Assistant(s)
-:   (-001) [Amay Kataria](https://eulphean.github.io/) (-002) Chris Martin
+:   (-001) TBA
 
 Class Forum
-:   [https://ats.community/c/courses/arttech-3135](https://ats.community/c/courses/arttech-3135)
+:   [{{ site.forum}}]({{site.forum}})
 
 Class Website
-:   [http://saic-ats.github.io/ARTTECH-3135/](https://saic-ats.github.io/ARTTECH-3135/)
+:   [{{ site.url }}]({{ site.url }})
 
 Code Examples
-:   [https://github.com/SAIC-ATS/ARTTECH-3135/](https://github.com/SAIC-ATS/ARTTECH-3135/)
+:   [{{ site.github }}]({{ site.github }})
 
 --------------------------------------------------------------------------------
 
 ### Instructor Bio
-[Christopher Baker](https://christopherbaker.net) is an artist whose work engages the rich collection of social, technological and ideological networks present in the urban landscape. He creates artifacts and situations that reveal and generate relationships within and between these networks.  Christopher’s work has been presented worldwide and he contributes to the open source community at [https://github.com/bakercp](https://github.com/bakercp).
+
+[Christopher Baker](https://new.christopherbaker.net) is an artist whose work engages the rich collection of social, technological and ideological networks present in the urban landscape. He creates artifacts and situations that reveal and generate relationships within and between these networks.  Christopher’s work has been presented worldwide and he contributes to the open source community at [https://github.com/bakercp](https://github.com/bakercp).
 
 --------------------------------------------------------------------------------
 
 ### Course Description
+
 This studio course investigates the creative possibilities in programming, from interactivity to information visualization. Students explore interactive narratives and games, software art, simulations and emergent behaviors, and other code-based forms. Lectures, discussions, and demonstrations provide a conceptual, aesthetic and technical foundation in programming as a creative practice.
 
 ### Course Goals
@@ -50,16 +51,19 @@ __Key goals include:__
 - Working knowledge of contemporary artists and groups that shape the fields of interactive art and creative code.
 
 ### Course Values
+
 - Sharing / Open
-    - Documentation
-    - [DIWO](http://furtherfield.org/projects/diwo-do-it-others-resource)
-    - Publish
-    - [Cult of Done Manifesto](https://medium.com/@bre/the-cult-of-done-manifesto-724ca1c2ff13)
+  - Documentation
+  - [DIWO](http://furtherfield.org/projects/diwo-do-it-others-resource)
+  - Publish
+  - [Cult of Done Manifesto](https://medium.com/@bre/the-cult-of-done-manifesto-724ca1c2ff13)
 
 ### Methodology
+
 Students will engage in individual in-lab and home assignments, class presentations, lectures, discussions, assigned readings, group and individual projects and desk critiques.  Visiting artists / faculty may enhance the experience and offer additional perspectives.
 
 ### Assignments
+
 The course may include workshops and several projects, relevant technical and theoretical reading, written online responses, technical research and outings.
 
 ### Class Text
@@ -67,12 +71,15 @@ The course may include workshops and several projects, relevant technical and th
 - [ofBook](http://openframeworks.cc/ofBook/chapters/foreword.html)
 
 ### Reading and other Resources
+
 Posted on the course website.
 
 ### Materials
+
 Provided by the student as needed.
 
 ### Attendance
+
 1. Students are best served by attending all classes.
 2. Missing three classes will result in a class failure.  This is strictly enforced.
 3. Six or more unexcused late arrivals or early departures will result in class failure.
@@ -80,24 +87,29 @@ Provided by the student as needed.
 _Tip: If you are going to be absent, late to class, or need to depart early, please contact me BEFORE class starts.  This is so I can make sure you have what you need to succeed!_
 
 ### Wait Lists
+
 Students wait-listed for classes will be admitted on a space available basis determined by instructor’s discretion (in consultation with the department chair).
 
 ### Grading Procedure/Criteria
+
 - Grades are credit / no-credit for this course. Credit is based on several factors: 30% participation (discussions, critiques, etc), 70% projects / assignments.
 - All assignments must be completed and submitted as instructed.
 - Incomplete grades will not be offered.
 
 ### Writing Assistance
-[Writing Center](http://www.saic.edu/academics/academicresources/writingcenter/)
+
+[Writing Center](https://www.saic.edu/academics/writing-center)
 
 ### Special Needs
-[Disability and Learning Resource Center](http://www.saic.edu/lifeatsaic/wellnesscenter/disabilityandlearningresourcecenter/)
+
+[Disability and Learning Resource Center](https://www.saic.edu/life-at-saic/wellness-center/disability)
 
 ### Course Schedule
 
 _(subject to change based on incoming skills and experience)_
 
 #### Session 00
+
 - Before we get Started ...
   - Begin download Xcode 8 from the App Store (will require OS 10.12+)
 
@@ -129,50 +141,50 @@ _(subject to change based on incoming skills and experience)_
     - [Unity3d](https://unity3d.com/)
     - [Unreal Engine](https://www.unrealengine.com)
 - So what are we going to focus on?
-    - Software
-        - [openFrameworks](http://openframeworks.cc/) (C/C++)
+  - Software
+    - [openFrameworks](http://openframeworks.cc/) (C/C++)
 - Getting Started
-    - C++
-      - Brief Intro to Xcode / IDEs
-      - Code Comments (e.g. why? [this](http://qz.com/726338/the-code-that-took-america-to-the-moon-was-just-published-to-github-and-its-like-a-1960s-time-capsule/))
-      - What is compiling?
-      - Hello World! in C++
-      - What is a framework?
-    - openFrameworks
-      - Installing openFrameworks
-        - Where does the folder go?
-        - Where do the projects go?
-        - What is in the openFrameworks folder?
+  - C++
+    - Brief Intro to Xcode / IDEs
+    - Code Comments (e.g. why? [this](http://qz.com/726338/the-code-that-took-america-to-the-moon-was-just-published-to-github-and-its-like-a-1960s-time-capsule/))
+    - What is compiling?
+    - Hello World! in C++
+    - What is a framework?
+  - openFrameworks
+    - Installing openFrameworks
+      - Where does the folder go?
+      - Where do the projects go?
+      - What is in the openFrameworks folder?
+    - Project Generator
+    - Basic Program Structure
+    - "Painting" metaphor
+      - Drawing "accumulates"
+      - Brush color doesn't change unless you tell it to.
+    - Drawing Shapes
+      - `ofDrawRectangle(...)`
+      - `ofDrawLine(...)`
+    - Colors
+      - `ofSetColor(...)`
+    - Fill vs. Stroke
+      - `ofSetFill()` and `ofNoFill()`
+    - Interactivity
+      - `ofGetMouseX()` and `ofGetMouseY()`
+  - Common Errors
+    - What is your compiler target?
+    - Did you accidentally add a break point?
+    - How do I start over?
       - Project Generator
-      - Basic Program Structure
-      - "Painting" metaphor
-        - Drawing "accumulates"
-        - Brush color doesn't change unless you tell it to.
-      - Drawing Shapes
-        - `ofDrawRectangle(...)`
-        - `ofDrawLine(...)`
-      - Colors
-        - `ofSetColor(...)`
-      - Fill vs. Stroke
-        - `ofSetFill()` and `ofNoFill()`
-      - Interactivity
-        - `ofGetMouseX()` and `ofGetMouseY()`
-    - Common Errors
-      - What is your compiler target?
-      - Did you accidentally add a break point?
-      - How do I start over?
-        - Project Generator
-      - What about variable "scope"?
-      - Why won't my if-statement do what I want it to?
-- Creative Code Meetup!
+    - What about variable "scope"?
+    - Why won't my if-statement do what I want it to?
 
 #### Session 01
+
 - Review Assignment 00
   - Questions from Assignment 00?
 
 - Discussion
-    - Discuss "What is Code"
-    - Week 1 artists.
+  - Discuss "What is Code"
+  - Week 1 artists.
 
 - C++
   - Variables and Types
@@ -218,20 +230,20 @@ _(subject to change based on incoming skills and experience)_
           - Finer-grained control of output.
         - `ofSetLogLevel(...)`
 
-
 - openFrameworks
   - `ofSetColor`
   - `ofFill`
   - `ofDraw*`
 
 #### Session 02
+
 - Review Assignment 01
   - Show & Tell
   - What was hard? What was easy?
 - C++ Syntax
   - Reminder that tutorials are available ...
-    - https://www.lynda.com/C-tutorials/Up-Running-C/167922-2.html
-    - https://www.lynda.com/C-tutorials/C-Essential-Training/182674-2.html
+    - [https://www.lynda.com/C-tutorials/Up-Running-C/167922-2.html](https://www.lynda.com/C-tutorials/Up-Running-C/167922-2.html)
+    - [https://www.lynda.com/C-tutorials/C-Essential-Training/182674-2.html](https://www.lynda.com/C-tutorials/C-Essential-Training/182674-2.html)
   - `if` statements
   - `for` loops
   - `%` modulo operator
@@ -259,100 +271,110 @@ _(subject to change based on incoming skills and experience)_
     - Importance of encoding for "glitch".
 
 #### Session 03
+
 - Simple State Machines
 - Traffic Lights
 - Review Pong Mods
 - Review helper functions and classes
-    - `ofLerp`, `ofMap`, and `ofNormalize` all help us scale linearly scale numbers.
-    - `ofSoundPlayer` allows us to play sounds.
-    - `ofVideoPlayer` allows us to play video.
-    - `ofTrueTypeFont` allows us to do more sophisticated typography.
+  - `ofLerp`, `ofMap`, and `ofNormalize` all help us scale linearly scale numbers.
+  - `ofSoundPlayer` allows us to play sounds.
+  - `ofVideoPlayer` allows us to play video.
+  - `ofTrueTypeFont` allows us to do more sophisticated typography.
 - How to Upload Pong Examples to Private Repo
 - Object Oriented Programming.  
 - OOP vs Structured Programming
-    - C++ is often described as C + object oriented code.
-    - Structured → top down approach
-    - OOP → create models problem
-    - Why OOP?
-        - Duplicate code can be confusing and lead to bug if it is modified in the future. You will always forget something!
-        - Modeling the world using objects can often be more intuitive, better differentiating between form and function.
-    - Classes
-        - Classes are user defined data structures.
-        - Classes are reusable between programs.
-        - Classes are a way to aggregate or model form (attributes) and function (methods) into reusable units.
-        - Classes are often used to easily represent multiples of a complex object.
-        - Classes are "extensible" through inheritance.
-        - An class "instance" is an independent "instantiated" variable form of a class.
-        - In the same way that an `int` is a variable type and it is instantiated by calling `int i = 0;`, a class variable type like `Ball ball1;`  Now the `ball1` variable is its own "instance" that can be manipulated.  Other "instances" e.g. `Ball ball2;` will have the same capabilities as `ball1`, but it will behave independently by default.
-        - Example: Writing a class definition for a ball.
-            - What are the "attributes" (that can be represented as variables) of a ball?
-                - Position
-                - Velocity
-                - Color
-                - ...
-            - What are the "actions" associated with a human?
-                - update
-                - draw
-        - Create default instances like you would with other variables.
-        - Create custom instances by defining custom constructors.
-        - Dot operator give you access to "member" attributes within a class.
-    - Warnings:
-        - Don't try to model the world!
-        - Design your classes and represent only salient attributes and actions that you need for your project.
-        - OOP isn't the solution to everything.  Most advanced programs are a combination of functional and object oriented approaches.
+  - C++ is often described as C + object oriented code.
+  - Structured → top down approach
+  - OOP → create models problem
+  - Why OOP?
+    - Duplicate code can be confusing and lead to bug if it is modified in the future. You will always forget something!
+    - Modeling the world using objects can often be more intuitive, better differentiating between form and function.
+  - Classes
+    - Classes are user defined data structures.
+    - Classes are reusable between programs.
+    - Classes are a way to aggregate or model form (attributes) and function (methods) into reusable units.
+    - Classes are often used to easily represent multiples of a complex object.
+    - Classes are "extensible" through inheritance.
+    - An class "instance" is an independent "instantiated" variable form of a class.
+    - In the same way that an `int` is a variable type and it is instantiated by calling `int i = 0;`, a class variable type like `Ball ball1;`  Now the `ball1` variable is its own "instance" that can be manipulated.  Other "instances" e.g. `Ball ball2;` will have the same capabilities as `ball1`, but it will behave independently by default.
+    - Example: Writing a class definition for a ball.
+      - What are the "attributes" (that can be represented as variables) of a ball?
+        - Position
+        - Velocity
+        - Color
+        - ...
+      - What are the "actions" associated with a human?
+        - update
+        - draw
+    - Create default instances like you would with other variables.
+    - Create custom instances by defining custom constructors.
+    - Dot operator give you access to "member" attributes within a class.
+  - Warnings:
+    - Don't try to model the world!
+    - Design your classes and represent only salient attributes and actions that you need for your project.
+    - OOP isn't the solution to everything.  Most advanced programs are a combination of functional and object oriented approaches.
 - Particle System Examples
-    - Replace ball variables with a Ball class.
-    - Replace x / y / z variables with `ofPoint` (which is an alias for `ofVec3f` or in 0.10.0+ `glm::vec3`).
-        - `ofPoint` is a "vector" of values, x, y, z and vector math can be performed in one line.
-        - `ofPoint` is a class!
-    - Particle systems in 3D!
+  - Replace ball variables with a Ball class.
+  - Replace x / y / z variables with `ofPoint` (which is an alias for `ofVec3f` or in 0.10.0+ `glm::vec3`).
+    - `ofPoint` is a "vector" of values, x, y, z and vector math can be performed in one line.
+    - `ofPoint` is a class!
+  - Particle systems in 3D!
 - Arrays are collections of variables.
-    - In C++ we usually use a `std::vector` to hold a collection of variables.
-    - We must define the contents of the `std::vector` using a template argument like `std::vector<int>` for a collection of integers.
+  - In C++ we usually use a `std::vector` to hold a collection of variables.
+  - We must define the contents of the `std::vector` using a template argument like `std::vector<int>` for a collection of integers.
 
 #### Session 04
+
 - Semantics
-    - Difference between Functions and Methods / Member Functions.
-    - Difference between parameters and arguments.
+  - Difference between Functions and Methods / Member Functions.
+  - Difference between parameters and arguments.
 - OOP (continued)
-    - Review Classes
-        - Difference between a `class` (a user defined type) and an `object` (instance of a class).
-        - Abstraction
-            - Why abstraction?
-        - Encapsulation
-            - Why encapsulation?
-        - "Dot" syntax to access member functions / member variables.
-    - Function Overloading
-    - Operator Overloading
-    - Polymorphism "having many forms"
+  - Review Classes
+    - Difference between a `class` (a user defined type) and an `object` (instance of a class).
+    - Abstraction
+      - Why abstraction?
+    - Encapsulation
+      - Why encapsulation?
+    - "Dot" syntax to access member functions / member variables.
+  - Function Overloading
+  - Operator Overloading
+  - Polymorphism "having many forms"
 - Pointers, memory
 
 #### Session 05
+
 - Pixels
 - Textures
 - Meshes
 - Mid Term Project Proposals Due + Discussion
 
 #### Session 06
+
 - Intro to computer vision / Machine Learning.
 - Optional IO Lab Training  
 - Mid Term Project Work
 
 #### Session 07
+
 - Computer Vision / Machine Learning Continued.
 - Mid Term Project Work
 
 #### Session 08
+
 - Mid Term Project Work
 
 #### Session 09
+
 - Mid Term Project Work
 
 #### Session 10
+
 - Mid Term Project Critiques
 
 #### Session 11
+
 - Final Project Work
 
 #### Session 13
+
 - Final Project Critiques

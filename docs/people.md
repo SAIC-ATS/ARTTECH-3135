@@ -15,14 +15,14 @@ published: false
         {% if post.author == person.username %}
        	<li>
             {% assign hasPosts = true %}
-        	{{ post.date | date_to_string }} : <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    	</li>
-		{% endif %}
+            {{ post.date | date_to_string }} : <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endif %}
     {% endfor %}
     {% if hasPosts == false %}
         <li>No posts yet.</li>
     {% endif %}
-	</ul>
+    </ul>
   </li>
 {% endfor %}
 </ul>

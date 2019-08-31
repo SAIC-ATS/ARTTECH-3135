@@ -1,69 +1,55 @@
 - name: Session 00
   dates:
-    - 2017-08-30
-    - 2017-09-11
+    - 2019-08-30
 
-- name: Session 01
-  dates:
-    - 2017-09-06
-    - 2017-09-18
+# - name: Session 01
+#   dates:
+#     - 2019-09-06
 
-- name: Session 02
-  dates:
-    - 2017-09-13
-    - 2017-09-25
+# - name: Session 02
+#   dates:
+#     - 2019-09-13
 
-- name: Session 03
-  dates:
-    - 2017-09-20
-    - 2017-10-02
+# - name: Session 03
+#   dates:
+#     - 2019-09-20
 
-- name: Session 04
-  dates:
-    - 2017-09-27
-    - 2017-10-09
+# - name: Session 04
+#   dates:
+#     - 2019-09-27
 
-- name: Session 05
-  dates:
-    - 2017-10-04
-    - 2017-10-16
+# - name: Session 05
+#   dates:
+#     - 2019-10-04
 
-- name: Session 06
-  dates:
-    - 2017-10-11
-    - 2017-10-23
+# - name: Session 06
+#   dates:
+#     - 2019-10-11
 
-- name: Session 07
-  dates:
-    - 2017-10-18
-    - 2017-10-30
+# - name: Session 07
+#   dates:
+#     - 2019-10-18
 
-- name: Session 08
-  dates:
-    - 2017-10-25
-    - 2017-11-06
+# - name: Session 08
+#   dates:
+#     - 2019-10-25
 
-- name: Session 09
-  dates:
-    - 2017-11-01
-    - 2017-11-13
+# - name: Session 09
+#   dates:
+#     - 2019-11-01
 
-- name: Session 10
-  dates:
-    - 2017-11-08
-    - 2017-11-20
+# - name: Session 10
+#   dates:
+#     - 2019-11-08
 
-- name: Session 11
-  dates:
-    - 2017-11-15
-    - 2017-11-27
+# - name: Session 11
+#   dates:
+#     - 2019-11-15
 
-- name: Session 12
-  dates:
-    - 2017-11-29
-    - 2017-12-11
+# - name: Session 12
+#   dates:
+#     - 2019-11-29
 
-- name: Session 13
-  dates:
-    - 2017-12-13
-    - 2017-12-18
+# - name: Session 13
+#   dates:
+#     - 2019-12-13

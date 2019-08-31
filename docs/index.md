@@ -36,6 +36,10 @@ published: true
   <em>None</em>
   {% endif %}
 
+  <h4>Examples</h4>
+  {% assign code = session.name | replace: " ", "_" %}
+  <a href="{{ site.github }}/tree/master/{{ code }}">{{ session.name }}</a>
+
   <h4>Notes</h4>
   {% assign notes = site.notes | where: "session", session.name %}
   {% if notes.size != 0 %}
@@ -45,7 +49,6 @@ published: true
   {% else %}
   <em>None</em>
   {% endif %}
+
 </div>
 {% endfor %}
-
-

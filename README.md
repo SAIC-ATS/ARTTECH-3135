@@ -15,7 +15,7 @@ The course documents are licensed under a [Creative Commons Attribution-NonComme
 
 ### Code Examples
 
-The example code is located in the root directory and organized by [zero-indexed](https://en.wikipedia.org/wiki/Zero-based_numbering) course week number (e.g. `Week_00`, `Week_01`, etc.) or a [zero-indexed](https://en.wikipedia.org/wiki/Zero-based_numbering) assignment number (e.g. `Assignment_00`, `Assignment_01`, etc.). Each example is documented with [inline comments](https://en.wikipedia.org/wiki/Comment_%28computer_programming%29%23Inline_comment_.28End-of-line.29) and a `README.md` as needed.
+The example code is located in the root directory and organized by [zero-indexed](https://en.wikipedia.org/wiki/Zero-based_numbering) course week number (e.g. `Session_00`, `Session_01`, etc.) or a [zero-indexed](https://en.wikipedia.org/wiki/Zero-based_numbering) assignment number (e.g. `Assignment_00`, `Assignment_01`, etc.). Each example is documented with [inline comments](https://en.wikipedia.org/wiki/Comment_%28computer_programming%29%23Inline_comment_.28End-of-line.29) and a `README.md` as needed.
 
 The example and assignment code is licensed under an [MIT license](LICENSE.md). For more information about open source licenses, see [The Legal Side of Open Source](https://opensource.guide/legal/).
 
@@ -32,7 +32,7 @@ openFrameworks/
 │   ├── README.md
 │   ├── LICENSE.md
 │   ├── docs
-│   ├── Week_00
+│   ├── Session_00
 │   └── ...
 ├── CHANGELOG.md
 ├── CODE_OF_CONDUCT.md

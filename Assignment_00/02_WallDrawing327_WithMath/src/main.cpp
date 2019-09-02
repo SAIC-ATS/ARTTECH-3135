@@ -2,17 +2,14 @@
 
 
 // This is the "main" function. It is the entry point to the program. Every
-// computer program has a starting point, and this is it!
+// computer program has a starting point and this is it!
 int main()
 {
     // Create some defaul window settings.
     ofGLWindowSettings settings;
 
-    // Set the width of the initial window.
-    settings.width = 800;
-
-    // Set the height of the initial window.
-    settings.height = 800;
+    // Set the width / height of the initial window.
+    settings.setSize(800, 800);
 
     // Create a window with the ofGLWindowSettings.
     ofCreateWindow(settings);

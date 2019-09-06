@@ -9,10 +9,7 @@ int main()
     ofGLWindowSettings settings;
 
     // Set the width of the initial window.
-    settings.width = 512;
-
-    // Set the height of the initial window.
-    settings.height = 512;
+    settings.setSize(512, 512);
 
     // Create a window with the ofGLWindowSettings.
     ofCreateWindow(settings);

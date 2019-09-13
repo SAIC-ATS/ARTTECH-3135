@@ -18,7 +18,7 @@ Instructor
 :   [Christopher Baker](https://new.christopherbaker.net)
 
 Teaching Assistant(s)
-:   (-001) TBA
+:   (-001) Kate Smith
 
 Class Forum
 :   [{{ site.forum}}]({{site.forum}})

@@ -11,6 +11,9 @@ public:
     void update() override;
     void draw() override;
 
+    void drawGrid();
+    
+    
     void keyPressed(int key) override;
     void keyReleased(int key) override;
     void mouseMoved(int x, int y) override;
@@ -22,18 +25,6 @@ public:
     void windowResized(int w, int h) override;
     void dragEvent(ofDragInfo dragInfo) override;
     void gotMessage(ofMessage msg) override;
-    
-    
-    void drawRandomBrush();
-    
-    int currentBrush = 'c';
-    
-    float brushSize = 10;
-    float hue = 0;
-    
-    
-    // ofPixel + ofTexture => ofImage
-    ofImage gradientBrush;
     
 };
 

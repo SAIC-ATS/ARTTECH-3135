@@ -5,6 +5,11 @@ void ofApp::setup()
 {
     ofBackground(0);
     ofSetBackgroundAuto(false);
+    
+    
+    // Load the brush image.
+    gradientBrush.load("puppy_1.jpg");
+   
 }
 
 
@@ -15,6 +20,9 @@ void ofApp::update()
 
 void ofApp::draw()
 {
+    ofEnableBlendMode(OF_BLENDMODE_ADD);
+    
+    
     ofSetColor(ofColor::fromHsb(hue, 255, 255));
 
     // Color preview square.
@@ -42,6 +50,12 @@ void ofApp::draw()
         {
             drawRandomBrush();
         }
+        else if (currentBrush == 'b')
+        {
+            gradientBrush.draw(mouseX - brushSize / 2, mouseY - brushSize / 2,
+                               brushSize,
+                               brushSize);
+        }
     }
 }
 
@@ -67,6 +81,10 @@ void ofApp::keyPressed(int key)
     {
         hue += 1;
         hue = ofWrap(hue, 0, 255);
+    }
+    else if (key == 'b')
+    {
+        currentBrush = 'b';
     }
     else if (key == 'c')
     {
@@ -147,12 +165,14 @@ void ofApp::drawRandomBrush()
     // The actual code for a random brush goes here.
     for (int i = 0; i < 5; i++)
     {
-        float randomAlpha = ofRandom(0, 50);
+        float randomAlpha = ofRandom(0, 5);
         ofSetColor(ofColor::fromHsb(hue, 255, 255, randomAlpha));
         
         float x = mouseX + ofRandom(-10, 10);
         float y = mouseY + ofRandom(-10, 10);
         
-        ofDrawCircle(x, y, brushSize);
+        gradientBrush.draw(x - brushSize / 2, y - brushSize / 2,
+                           brushSize,
+                           brushSize);
     }
 }

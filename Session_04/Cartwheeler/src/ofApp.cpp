@@ -38,8 +38,3 @@ void ofApp::draw()
     ofPopMatrix();
 
 }
-
-
-void ofApp::keyPressed(int key)
-{
-}

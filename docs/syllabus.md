@@ -375,6 +375,14 @@ _(subject to change based on incoming skills and experience)_
 
 - Final Project Work
 
+#### Session 12
+
+- Final Project Work
+
 #### Session 13
+
+- Final Project Work
+
+#### Session 14
 
 - Final Project Critiques

@@ -15,3 +15,5 @@ res/
 srcJava/
 *.gradle
 AndroidManifest.xml
+
+.DS_Store

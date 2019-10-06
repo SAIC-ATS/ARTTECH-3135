@@ -18,13 +18,13 @@
   dates:
     - 2019-09-27
 
-# - name: Session 05
-#   dates:
-#     - 2019-10-04
+- name: Session 05
+  dates:
+    - 2019-10-04
 
-# - name: Session 06
-#   dates:
-#     - 2019-10-11
+- name: Session 06
+  dates:
+    - 2019-10-11
 
 # - name: Session 07
 #   dates:

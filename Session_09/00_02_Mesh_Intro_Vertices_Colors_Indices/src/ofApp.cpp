@@ -7,8 +7,8 @@ void ofApp::setup()
 
     /// ... continued from 01_Mesh_Intro_Vertices_Colors/
     ///
-    // 4. As, we create increasingly complex mesh geometries and surces, we will
-    // notices that the same coordinates vertices are used for multiple mesh
+    // 4. As, we create increasingly complex mesh geometries and surfaces, we
+    // will notice that the same coordinates vertices are used for multiple mesh
     // triangles. Building from the previous example, we might want to create
     // two additional triangles WITHOUT adding additional vertices. In this case
     // we want to add triangles T2 and T3.
@@ -18,17 +18,16 @@ void ofApp::setup()
     //     / T0 \  / T3 \  /
     //   [V0]---[V2]----[V4]
     //
-    // With this desire, we introduce the concept of "indices". Instead of
+    // With this goal in mind, we introduce the concept of "indices". Instead of
     // duplicating V1, V2 and V3 to create T2, we can "re-use" the original
     // vertices V1, V2 and V3 and address them by "index". The index corresponds
     // the their original insertion order. Thus the first vertex added to the
     // mesh is is I0. The second vertex added to the mesh is I1, the third I2,
     // etc. When using indices, we can address an existing vertex AND its
-    // associated color. So, using vertices, we can create 2 additional
-    // triangles without adding an additional vertices or colors.
+    // associated color. So, using existing vertices, we can create 2 additional
+    // triangles without additional data.
 
     // First we add the vertices and colors as in previous examples.
-
     glm::vec3 V0 = {  50, 125, 0 };
     glm::vec3 V1 = { 100,  50, 0 };
     glm::vec3 V2 = { 150, 125, 0 };
@@ -144,6 +143,17 @@ void ofApp::setup()
     // mesh.addIndex(3);
     //
     // etc.
+
+    // NOTE: If indices are NOT used (as in previous examples), then this would
+    // be equivalent to just setting the indices to match the number of
+    // vertices, e.g.
+    //
+    // mesh.addIndex(0);
+    // mesh.addIndex(1);
+    // mesh.addIndex(2);
+    // mesh.addIndex(3);
+    // mesh.addIndex(4);
+    // mesh.addIndex(5);
 
 }
 

@@ -5,16 +5,19 @@ void ofApp::setup()
 {
     mesh.setMode(OF_PRIMITIVE_TRIANGLES);
 
-    /// ... continued from 00_Mesh_Intro_Vertices/
-    ///
+    // ... continued from 00_Mesh_Intro_Vertices/
+    //
     // 3. Next we can add color data to the mesh. Colors are assigned on a
     // "per vertex" basis. Thus each vertex is assigned a color value. The
     // renderer will then fill the space between the vertices with colors that
-    // blend between each vertex. If the same colors are used for each vertex,
-    // solid the no color interpolation is needed because all colors match.
-    // For vertices that have different colors, gradients will result.
+    // blend between each vertex. If the same color is used for each vertex,
+    // no color visible interpolation will occur and the triangle will appear as
+    // as solid color.
     //
-    // In additiont o the vertices defined previously, we will also assign
+    // For vertices that have different colors, gradients blending between
+    // the vertex colors will result.
+    //
+    // In addition to the vertices defined previously, we will also assign
     // 6 colors, one for each vertex. Thus:
     //
     //  V0 -> C0 (Color 0)
@@ -50,24 +53,24 @@ void ofApp::setup()
     ofColor C5 = ofColor::blue;  // Will be associated with V5.
 
 
-    // Triangle T0
-    mesh.addVertex(V0);
+    // Triangle T1 (three vertices and colors)
+    mesh.addVertex(V0); // The vertex V0 ...
+    mesh.addColor(C0);  // ... and its color C0.
+
     mesh.addVertex(V1);
-    mesh.addVertex(V2);
-
-    // Triangle T1
-    mesh.addVertex(V3);
-    mesh.addVertex(V4);
-    mesh.addVertex(V5);
-
-    // Triangle T0
-    mesh.addColor(C0);
     mesh.addColor(C1);
+
+    mesh.addVertex(V2);
     mesh.addColor(C2);
 
-    // Triangle T1
+    // Triangle T1 (three vertices and colors)
+    mesh.addVertex(V3);
     mesh.addColor(C3);
+
+    mesh.addVertex(V4);
     mesh.addColor(C4);
+
+    mesh.addVertex(V5);
     mesh.addColor(C5);
 
     // NOTE: ofMesh keeps a collection of vertices and a collection of colors.

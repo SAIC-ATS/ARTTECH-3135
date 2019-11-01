@@ -41,7 +41,7 @@ void ofApp::update()
                 int brightnessOfBackground = backgroundPixels.getColor(x, y).getBrightness();
                 int absDiff = std::abs(brightnessOfBackground - brightnessOfGrayscale);
 
-                if (absDiff > 10)
+                if (absDiff > 60)
                 {
                     absDiff = 255;
                 }

@@ -8,11 +8,8 @@ int main()
     // Create some defaul window settings.
     ofGLWindowSettings settings;
 
-    // Set the width of the initial window.
-    settings.width = 256;
-
-    // Set the height of the initial window.
-    settings.height = 256;
+    // Set the size of the initial window.
+    settings.setSize(256, 256);
 
     // Create a window with the ofGLWindowSettings.
     ofCreateWindow(settings);

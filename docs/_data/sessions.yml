@@ -38,18 +38,18 @@
   dates:
     - 2019-11-01
 
-# - name: Session 10
-#   dates:
-#     - 2019-11-08
+- name: Session 10
+  dates:
+    - 2019-11-08
 
-# - name: Session 11
-#   dates:
-#     - 2019-11-15
+- name: Session 11
+  dates:
+    - 2019-11-15
 
-# - name: Session 12
-#   dates:
-#     - 2019-11-29
+- name: Session 12
+  dates:
+    - 2019-11-22
 
-# - name: Session 13
-#   dates:
-#     - 2019-12-13
+- name: Session 13
+  dates:
+    - 2019-12-13

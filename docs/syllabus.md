@@ -6,10 +6,10 @@ title:  Syllabus
 ## Interactive Art / Creative Code, ARTTECH 3135 / 5135
 
 Semester, Year
-:   Fall, 2019
+:   Fall, 2020
 
 Meeting Times
-:   (-001) Fridays 9am-4pm
+:   (-001) Fridays 9am-5pm
 
 Meeting Location
 :   MacLean 401
@@ -18,7 +18,7 @@ Instructor
 :   [Christopher Baker](https://new.christopherbaker.net)
 
 Teaching Assistant(s)
-:   (-001) Kate Smith
+:   (-001) TBA
 
 Class Forum
 :   [{{ site.forum}}]({{site.forum}})
@@ -33,7 +33,7 @@ Code Examples
 
 ### Instructor Bio
 
-[Christopher Baker](https://new.christopherbaker.net) is an artist whose work engages the rich collection of social, technological and ideological networks present in the urban landscape. He creates artifacts and situations that reveal and generate relationships within and between these networks.  Christopher’s work has been presented worldwide and he contributes to the open source community at [https://github.com/bakercp](https://github.com/bakercp).
+[Christopher Baker](https://new.christopherbaker.net) is an artist whose work engages the rich collection of social, technological and ideological networks present in the urban landscape. He creates artifacts and situations that reveal and generate relationships within and between these networks. Christopher’s work has been presented worldwide and he contributes to the open source community at [https://github.com/bakercp](https://github.com/bakercp).
 
 --------------------------------------------------------------------------------
 
@@ -78,13 +78,43 @@ Posted on the course website.
 
 Provided by the student as needed.
 
-### Attendance
+### ATS Facilities
 
-1. Students are best served by attending all classes.
-2. Missing three classes will result in a class failure.  This is strictly enforced.
-3. Six or more unexcused late arrivals or early departures will result in class failure.
+Normal ATS facilities access, procedures and policies have changed significantly in response to COVID-19 pandemic.  Please familiarize yourself with ATS facilities availability, capacity, authorizations, reservations, sanitation and other ATS-specific information in the [ATS Facilities Canvas Course](https://saic.instructure.com/enroll/CMMJY3).
 
-_Tip: If you are going to be absent, late to class, or need to depart early, please contact me BEFORE class starts.  This is so I can make sure you have what you need to succeed!_
+### ATS Community
+
+ATS is working to build a strong online and offline community during the COVID-19 pandemic. We strongly encourage all ATS students to sign up for our departmental forum at [https://ats.community](https://ats.community). Students can find out about visiting artist opportunities, upcoming ATS Town Halls, our Diversity, Equity and Inclusion reading group, special events, participate in discussions, and get help with their projects.
+
+### Community in the time of Covid
+
+We understand the classroom as a space for practicing freedom; where one may challenge psychic, social, and cultural borders and create meaningful artistic expressions. We also recognize that in these unprecedented times each of our relationships to art and education are being asked to change in profound and fundamental ways. This course will not ignore the complexities of how the pandemic, current events, and society's evolving practices in health and safety are influencing our daily abilities to learn and engage.
+
+To do so we must acknowledge and embrace the different identities and backgrounds we inhabit and recognize the many valid and varying experiences that shape the way we inhabit and express ourselves within this classroom. This means that we will use preferred pronouns, respect self-identifications, and be mindful of special needs. Each student is expected to practice agency in defining their own learning objectives with this course material and contribute to building a supportive environment for others to define and achieve their own learning objectives. Students are also expected to practice self-care- understanding that each of our learning happens differently as the circumstances of our lives fluctuate. Be patient with yourself and be mindful of what your health and body need in an online learning environment to best achieve your goals.  Disagreement is encouraged and supported, however our differences affect our conceptualization and experience of reality, and it is extremely important to remember that certain gender, race, sex, and class identities are more privileged while others are undermined and marginalized. Consequently, this makes some people feel more protected or vulnerable during debates and discussions. A collaborative effort between the students, TA, and instructor is needed to create a supportive learning environment. While everyone should feel free to experiment creatively and conceptually, if a class member points out that something you have said or shared with the group is offensive, in lieu of defensiveness; this class will work to instead approach the discussion as a valuable opportunity for us to grow and learn from one another. Alternatively if you feel that something said in discussion or included in a piece of work is harmful, you are encouraged to speak with the instructor or TA.
+
+Inspired and adapted from:
+"What To Expect" by Chelsea Thompto
+VoidLab / CC SA
+
+### General Classroom Health and Safety Expectations
+
+- Masks must be worn at all times in classrooms and campus buildings (except when eating in designated spaces)
+- Maintain 6 feet (or more) of distance from everyone as much as possible
+- When it is necessary to be within 6 feet of someone, it should be for less than 15 minutes cumulatively over the course of a day.
+
+It is essential to adhere to these guidelines to lower the risk of Covid19 infection for everyone in the SAIC community.
+
+If you follow these rules, you will not be considered a "contact" even if someone in your class tests positive or develops symptoms of Covid19.  
+
+If you do not follow these rules and someone with whom you have been in extended close contact (under 6 feet for more than 15 minutes cumulatively in one day) tests positive or develops symptoms of Covid19, you will automatically be considered a "contact" and will have to quarantine for 14 days.  This does not mean that you will develop Covid19, but it does mean that you will have to remain in quarantine for 14 days, regardless of whether or not you test positive for Covid19 or develop symptoms.
+
+If you feel ill, have a temperature, or develop symptoms of Covid19, stay home , call the Wellness Center, and contact your instructor for a makeup assignment. Do not return to campus until you have been advised it is OK to do so by the Wellness Center. Health Services: healthservices@saic.edu and 312-499-4288.
+
+Visit the Make Ready framework (Links to an external site.) website for more information about our community effort to be safe and minimize the spread of illness on campus this semester.
+
+### Attendance, Participation, and Engagement Policy
+
+Faculty will excuse any absence from in-person course activity when a student is ill, has any symptoms of illness, or is engaging in a precautionary quarantine. Instead, faculty will issue students alternative assignments or activities to stand in for any in-person content that is missed. To the extent that their health permits, students should continue keeping up with online course activity and independent work while they are studying remotely. The complete attendance policy for 2020-2021 can be found in the SAIC Student Handbook: https://www.saic.edu/sites/default/files/Student%20Handbook.pdf#page=73
 
 ### Wait Lists
 
@@ -100,13 +130,24 @@ Students wait-listed for classes will be admitted on a space available basis det
 
 [Writing Center](https://www.saic.edu/academics/writing-center)
 
-### Special Needs
+### Accommodations for Students with Disabilities
 
-[Disability and Learning Resource Center](https://www.saic.edu/life-at-saic/wellness-center/disability)
+SAIC is committed to full compliance with all laws regarding equal opportunities for students with disabilities. Students with known or suspected disabilities, such as a Reading/Writing Disorder, ADD/ADHD, and/or a mental health condition who think they would benefit from assistance or accommodations should first contact the Disability and Learning Resource Center (DLRC) to schedule a virtual appointment. DLRC staff will review your disability documentation and work with you to determine reasonable accommodations. They will then provide you and your instructors with a letter outlining the approved accommodations via email. You must request accommodations for each course before any accommodations will be implemented. You should contact the DLRC as early in the semester as possible. The DLRC can be reached via phone at 312.499.4278 or email at dlrc@saic.edu.
+
+### Student Support
+
+The Office of Students Affairs at SAIC is here to support all students with resources to aid in their success inside and outside of the classroom. If you have difficulty affording groceries or accessing food everyday, and/or do not have a safe and stable place to live, please contact the Office of Student Affairs - (312) 629-6800; studenthelp@saic.edu during business hours. If you contact them after hours, someone will respond the next business day.
+
+The SAIC Wellness Center, which includes Counseling Services, Health Services and the Disability and Learning Resource Center, is also here to support students' mental health, health and accessibility needs. You may contact them at:
+
+Counseling Services:  counselingservices@saic.edu and 312-499-4271 (press 1 to speak to a counselor after hours)
+Health Services:  healthservices@saic.edu and 312-499-4288/877.924.7758
+Disability and Learning Resource Center:  dlrc@saic.edu and 312-499-4278
+In case of an emergency, please contact SAIC Campus Security, 24 hours a day, by visiting any campus security desk or calling 312.899.1230.
 
 ### Course Schedule
 
-_(subject to change based on incoming skills and experience)_
+This schedule will be updated in the coming days to better reflect the transition to online learning.
 
 #### Session 00
 
@@ -351,7 +392,6 @@ _(subject to change based on incoming skills and experience)_
 #### Session 06
 
 - Intro to computer vision / Machine Learning.
-- Optional IO Lab Training  
 - Mid Term Project Work
 
 #### Session 07

@@ -62,6 +62,7 @@ openFrameworks/
 2. Clone the repository
   - `git clone https://github.com/SAIC-ATS/ARTTECH-3135.git`
 3. To update your copy to the latest ..
+  - `cd OF_ROOT/ARTTECH-3135`
   - `git pull`
 
 ### Contributor Installation (optional)
